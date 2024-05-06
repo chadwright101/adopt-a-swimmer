@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Home",
+    "url": "/"
+  },
+  {
+    "title": "About",
+    "url": "/about"
+  },
+  {
+    "title": "Sponsorships",
+    "url": "/sponsorships"
+  },
+  {
+    "title": "Meet The Team",
+    "url": "/meet-the-team"
+  },
+  {
+    "title": "Documentation",
+    "url": "/documentation"
+  },
+  {
+    "title": "Contact",
+    "url": "/contact"
+  }
+]
