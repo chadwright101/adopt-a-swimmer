@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Button from "./_components/button";
 
 export const metadata = {
   title: "Adopt A Swimmer",
@@ -7,19 +7,21 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="grid place-items-center h-screen bg-darkBlue px-4">
-      <div className="max-w-[500px] flex flex-col items-center">
-        <h1 className="text-white text-center max-w-[400px] phone:text-[3rem] mb-8">
-          Something new & exciting is coming soon...
-        </h1>
-        <Image
-          src="/adopt-a-swimmer-logo.png"
-          alt="Adopt A Swimmer logo"
-          width={500}
-          height={345}
-          className="image-pulse w-[280px] phone:w-[380px] tablet:w-[500px]"
-        />
-      </div>
+    <main>
+      <Button secondaryColor="blue">Read more</Button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et
+        asperiores reprehenderit quod quibusdam! Rerum illo sit ab harum, hic
+        libero natus maxime adipisci. Quidem voluptatibus deserunt doloremque
+        ipsam quia nisi quam possimus quasi, nobis amet cupiditate libero, at
+        magni exercitationem ut in qui perferendis praesentium pariatur beatae?
+        Quidem, quas. Dolorum et aliquid numquam, ut illum cupiditate,
+        voluptatum odit quam expedita sequi amet ad aspernatur doloremque quod
+        natus assumenda distinctio veniam. Quia ab facere, harum vel iure
+        voluptates unde, numquam explicabo saepe officia odit commodi voluptatem
+        sit totam voluptas. Alias voluptatum repellendus sed recusandae
+        temporibus sunt quo facilis porro minima.
+      </p>
     </main>
   );
 }

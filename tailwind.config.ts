@@ -10,7 +10,8 @@ const config: Config = {
     colors: {
       orange: "#f68428",
       lightBlue: "#00b5cb",
-      darkBlue: "#0082c8",
+      blue: "#0082C8",
+      darkBlue: "#005696",
       white: "#fff",
       black: "#1b1b1b",
     },
@@ -23,9 +24,27 @@ const config: Config = {
       bold: "900",
     },
     fontSize: {
-      paragraph: "1rem",
-      subheading: "1.25rem",
-      heading: "1.75rem",
+      paragraph: [
+        "1rem",
+        {
+          lineHeight: "142%",
+          letterSpacing: "0.02rem",
+        },
+      ],
+      subheading: [
+        "1.25rem",
+        {
+          lineHeight: "110%",
+          letterSpacing: "0.0375rem",
+        },
+      ],
+      heading: [
+        "1.75rem",
+        {
+          lineHeight: "100%",
+          letterSpacing: "0.0525rem",
+        },
+      ],
     },
     screens: {
       phone: "425px",
