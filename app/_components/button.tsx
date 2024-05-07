@@ -19,10 +19,10 @@ const Button = ({
   return (
     <button
       className={classNames(
-        "flex gap-3 items-center justify-center rounded drop-shadow-md uppercase hover:px-10 hover:-mx-1 ease-in-out duration-300",
+        "flex gap-3 items-center justify-center rounded drop-shadow-md uppercase  ease-in-out duration-300",
         {
-          "px-9 py-4": backgroundColor,
-          "px-8 py-3": !backgroundColor,
+          "px-9 py-4 hover:px-10 hover:-mx-1": backgroundColor,
+          "px-8 py-3 hover:px-9 hover:-mx-1": secondaryColor,
           "text-black bg-white": !backgroundColor,
           "text-white": backgroundColor && !secondaryColor,
           "bg-orange hover:bg-orange/90": backgroundColor === "orange",
