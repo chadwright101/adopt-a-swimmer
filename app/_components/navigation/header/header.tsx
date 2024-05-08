@@ -6,11 +6,11 @@ import MenuToggle from "./mobile/menu-toggle";
 
 const Header = () => {
   return (
-    <header className="mb-20 py-6 h-[96px] border-b-4 border-orange desktop:mb-25">
-      <div className="mx-5 h-full flex justify-between items-start desktop:items-end desktop:max-w-[1100px] desktop:mx-auto">
+    <header className="mb-20 py-6 h-[96px] border-b-4 border-orange desktopSmall:mb-25">
+      <div className="mx-5 h-full flex justify-between items-start desktopSmall:items-end desktopSmall:max-w-[1100px] desktopSmall:mx-auto">
         <Link
           href="/"
-          className="desktop:self-start hover:desktop:opacity-90 ease-in-out duration-200 z-10"
+          className="desktopSmall:self-start hover:desktopSmall:opacity-90 ease-in-out duration-200 z-10"
         >
           <Image
             src="/adopt-a-swimmer-logo.png"
@@ -21,12 +21,12 @@ const Header = () => {
           />
         </Link>
         <MenuToggle />
-        <nav className="hidden desktop:block translate-y-3">
+        <nav className="hidden desktopSmall:block translate-y-3">
           <ul className="flex gap-5">
             {data.map(({ title, url }, index) => (
               <li key={index}>
                 <Link
-                  className="text-[15px] desktop:hover:text-orange ease-in-out duration-200"
+                  className="text-[15px] desktopSmall:hover:text-orange ease-in-out duration-200"
                   href={url}
                 >
                   {title}

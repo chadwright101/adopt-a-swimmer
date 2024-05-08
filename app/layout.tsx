@@ -1,5 +1,5 @@
-import Footer from "./_components/navigation/header/footer/footer";
-import Header from "./_components/navigation/header/header";
+import Footer from "./_components/navigation/footer/footer";
+import Header from "@/app/_components/navigation/header/header";
 import "./globals.css";
 
 export default function RootLayout({ children }) {

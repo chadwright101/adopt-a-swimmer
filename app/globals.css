@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,200;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply font-roboto text-black
-}
+@layer components {
+  * {
+    @apply font-roboto text-black
+  }
 
-h1 {
-  @apply text-heading font-bold text-orange
-}
+  h1 {
+    @apply text-heading font-bold text-orange font-barrio
+  }
 
-h2, h3, h4, h5, h6 {
-  @apply text-subheading font-regular
-}
+  h2, h3, h4, h5, h6 {
+    @apply text-subheading font-regular font-barrio
+  }
 
-p, ul, ol, li {
-  @apply text-paragraph font-thin text-justify
-}
+  p, ul, ol, li {
+    @apply text-paragraph font-thin text-justify
+  }
 
-button {
-  @apply font-bold text-paragraph
+  button {
+    @apply font-bold text-paragraph
+  }
 }

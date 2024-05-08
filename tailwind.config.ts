@@ -15,9 +15,11 @@ const config: Config = {
       white: "#fff",
       black: "#1b1b1b",
       link: "#0000FF",
+      none: "transparent",
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
+      barrio: ["Barrio", "system-ui"],
     },
     fontWeight: {
       thin: "200",
@@ -33,24 +35,25 @@ const config: Config = {
         },
       ],
       subheading: [
-        "1.25rem",
+        "1.75rem",
         {
           lineHeight: "110%",
-          letterSpacing: "0.0375rem",
+          letterSpacing: "0.0525rem",
         },
       ],
       heading: [
-        "1.75rem",
+        "3rem",
         {
           lineHeight: "100%",
-          letterSpacing: "0.0525rem",
+          letterSpacing: "0.09rem",
         },
       ],
     },
     screens: {
       phone: "425px",
       tablet: "800px",
-      desktop: "1140px",
+      desktopSmall: "1140px",
+      desktop: "1440px",
     },
     margin: {
       0: "0",

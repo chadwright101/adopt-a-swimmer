@@ -25,7 +25,7 @@ const MenuToggle = () => {
   return (
     <>
       <button
-        className="relative px-4 py-5 -m-3 z-50 translate-y-4 desktopSmall:hidden ease-in-out duration-300 desktop:hidden"
+        className="relative px-4 py-5 -m-3 z-50 translate-y-4 ease-in-out duration-300 desktopSmall:hidden"
         onClick={() => setShowMenu(!showMenu)}
         aria-label="Open and close navigation menu"
       >
@@ -54,7 +54,7 @@ const MenuToggle = () => {
       </button>
       <nav
         className={classNames(
-          "fixed top-0 left-0 bg-blue w-full h-full ease-in-out duration-300 z-20 desktop:hidden",
+          "fixed top-0 left-0 bg-blue w-full h-full ease-in-out duration-300 z-20 desktopSmall:hidden",
           {
             "translate-x-full": !showMenu,
             "translate-x-0": showMenu,

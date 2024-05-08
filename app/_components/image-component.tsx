@@ -29,7 +29,7 @@ const ImageComponent = ({
         loading={priority ? "eager" : "lazy"}
         width={desktopWidth}
         height={desktopWidth * 1.25}
-        className={cssClasses}
+        className={`rounded-2xl ${cssClasses}`}
       />
       {/* <source
         media="(max-width:425px)"
@@ -45,7 +45,7 @@ const ImageComponent = ({
         loading={priority ? "eager" : "lazy"}
         width={desktopWidth}
         height={desktopWidth * 1.25}
-        className={cssClasses}
+        className={`rounded-2xl ${cssClasses}`}
       /> */}
     </picture>
   );
