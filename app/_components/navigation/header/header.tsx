@@ -10,7 +10,7 @@ const Header = () => {
       <div className="mx-5 h-full flex justify-between items-start desktop:items-end desktop:max-w-[1100px] desktop:mx-auto">
         <Link
           href="/"
-          className="desktop:self-start hover:desktop:opacity-90 ease-in-out duration-200"
+          className="desktop:self-start hover:desktop:opacity-90 ease-in-out duration-200 z-10"
         >
           <Image
             src="/adopt-a-swimmer-logo.png"
