@@ -48,11 +48,18 @@ const config: Config = {
           letterSpacing: "0.09rem",
         },
       ],
+      quote: [
+        "1.5rem",
+        {
+          lineHeight: "130%",
+          letterSpacing: "0.045rem",
+        },
+      ],
     },
     screens: {
       phone: "425px",
       tablet: "800px",
-      desktopSmall: "1140px",
+      desktopSmall: "1100px",
       desktop: "1440px",
     },
     margin: {

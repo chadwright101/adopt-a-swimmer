@@ -4,10 +4,10 @@ import ImageComponent from "../image-component";
 
 const MakeASplashSection = () => {
   return (
-    <div className="py-15 bg-lightBlue relative desktopSmall:max-w-[1440px] desktopSmall:px-10 desktop:mx-auto">
+    <main className="py-15 bg-lightBlue relative desktopSmall:max-w-[1440px] desktopSmall:px-10 desktop:mx-auto">
       <Image
         src="/graphics/brush-stroke-1.svg"
-        alt=""
+        alt="Brush stroke graphic"
         className="hidden desktopSmall:block absolute top-0 left-0 w-full max-w-[1440px]"
         width={1738}
         height={294}
@@ -15,7 +15,7 @@ const MakeASplashSection = () => {
       <div className="desktopSmall:grid grid-cols-2 gap-10 max-w-[1100px] desktopSmall:mx-auto">
         <div className="bg-orange aspect-square z-10 w-full min-[600px]:h-[400px] tablet:h-[600px] tablet:p-8 rounded-tl-full rounded-bl-full p-5 ml-auto desktopSmall:p-0 desktopSmall:bg-none desktopSmall:rounded-none desktopSmall:order-2 desktopSmall:aspect-auto desktopSmall:h-full">
           <ImageComponent
-            file="/images/hero-slides/DSC_1660.jpg"
+            file="/images/DSC_1507.jpg"
             phoneWidth={400}
             tabletWidth={800}
             desktopWidth={800}
@@ -53,12 +53,12 @@ const MakeASplashSection = () => {
       </div>
       <Image
         src="/graphics/brush-stroke-2.svg"
-        alt=""
+        alt="Brush stroke graphic"
         className="hidden desktopSmall:block absolute bottom-0 left-0 w-full max-w-[1440px]"
         width={1738}
         height={294}
       />
-    </div>
+    </main>
   );
 };
 

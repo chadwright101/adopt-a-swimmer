@@ -9,6 +9,7 @@ interface Props {
   phoneWidth: number;
   tabletWidth: number;
   desktopWidth: number;
+  alt?: string;
 }
 
 const ImageComponent = ({
@@ -20,12 +21,13 @@ const ImageComponent = ({
   phoneWidth,
   tabletWidth,
   desktopWidth,
+  alt,
 }: Props) => {
   return (
     <picture className={pictureCssClasses}>
       <Image
         src={file}
-        alt="Adopt A Swimmer - Plettenberg Bay"
+        alt={`Adopt A Swimmer - Plettenberg Bay || ${alt}`}
         loading={priority ? "eager" : "lazy"}
         width={desktopWidth}
         height={desktopWidth * 1.25}
@@ -41,7 +43,7 @@ const ImageComponent = ({
       />
       <Image
         src={`https://ik.imagekit.io/thewrightdesigns/monks-medical/${folder}/tr:w-${desktopWidth},q-75/${file}`}
-        alt="Adopt A Swimmer - Plettenberg Bay"
+        alt={`Adopt A Swimmer - Plettenberg Bay || ${alt}`}
         loading={priority ? "eager" : "lazy"}
         width={desktopWidth}
         height={desktopWidth * 1.25}

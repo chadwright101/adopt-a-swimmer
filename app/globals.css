@@ -22,6 +22,10 @@
     @apply text-paragraph font-thin text-justify
   }
 
+  blockquote p, footer {
+    @apply text-quote font-barrio
+  }
+
   button {
     @apply font-bold text-paragraph
   }
