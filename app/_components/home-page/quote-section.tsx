@@ -3,7 +3,7 @@ import ImageComponent from "../image-component";
 
 const QuoteSection = () => {
   return (
-    <article className="bg-darkBlue py-15 px-5 relative tablet:grid grid-cols-2 place-items-center gap-5 desktopSmall:block">
+    <article className="bg-darkBlue py-15 px-5 relative max-w-[1440px] tablet:grid grid-cols-2 place-items-center gap-5 desktopSmall:block desktopSmall:mx-auto">
       <div className="relative w-full aspect-[1.5/2] mb-10 z-10 tablet:-mb-4 desktopSmall:m-0 desktopSmall:hidden">
         <ImageComponent
           file="/images/DSC_1549.jpg"
@@ -25,7 +25,7 @@ const QuoteSection = () => {
       <Image
         src="/graphics/brush-stroke-3.svg"
         alt="Brush stroke graphic"
-        className="tablet:hidden absolute h-full top-0"
+        className="tablet:hidden absolute h-full top-0 left-0"
         width={1196}
         height={324}
       />

@@ -3,10 +3,23 @@ import Image from "next/image";
 
 import data from "@/app/_data/navigation.json";
 import MenuToggle from "./mobile/menu-toggle";
+import classNames from "classnames";
 
-const Header = () => {
+interface Props {
+  isScrolled: boolean;
+}
+
+const Header = ({ isScrolled }: Props) => {
   return (
-    <header className="mb-20 py-6 h-[96px] border-b-4 border-orange desktopSmall:mb-25">
+    <header
+      className={classNames(
+        "bg-white z-50 mb-20 py-6 h-[96px] border-b-4 border-orange desktopSmall:mb-25 desktopSmall:sticky ease-in-out duration-500",
+        {
+          "desktopSmall:top-0": !isScrolled,
+          "desktopSmall:-top-8": isScrolled,
+        }
+      )}
+    >
       <div className="mx-5 h-full flex justify-between items-start desktopSmall:items-end desktopSmall:max-w-[1100px] desktopSmall:mx-auto">
         <Link
           href="/"
@@ -15,7 +28,13 @@ const Header = () => {
           <Image
             src="/adopt-a-swimmer-logo.png"
             alt="Adopt a Swimmer Logo"
-            className="drop-shadow-default"
+            className={classNames(
+              "drop-shadow-default ease-in-out duration-500",
+              {
+                "desktopSmall:scale-[45%] desktopSmall:-translate-y-3":
+                  isScrolled,
+              }
+            )}
             width={140}
             height={100}
           />

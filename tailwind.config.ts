@@ -8,12 +8,13 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      orange: "#f68428",
+      orange: "#F68428",
       lightBlue: "#00b5cb",
       blue: "#0082C8",
       darkBlue: "#005696",
       white: "#fff",
       black: "#1b1b1b",
+      brown: "#9C5A36",
       link: "#0000FF",
       none: "transparent",
     },

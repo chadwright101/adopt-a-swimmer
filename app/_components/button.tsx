@@ -4,7 +4,14 @@ import Image from "next/image";
 interface Props {
   backgroundColor?: "blue" | "darkBlue" | "lightBlue" | "orange";
   secondaryColor?: "blue" | "darkBlue" | "lightBlue" | "orange";
-  arrowColor?: "blue" | "darkBlue" | "lightBlue" | "orange" | "black" | "white";
+  arrowColor?:
+    | "blue"
+    | "darkBlue"
+    | "lightBlue"
+    | "orange"
+    | "black"
+    | "white"
+    | "brown";
   onClick?: () => void;
   typeSubmit?: boolean;
   children?: React.ReactNode;
@@ -23,24 +30,30 @@ const Button = ({
   return (
     <button
       className={classNames(
-        `flex gap-3 items-center justify-center rounded drop-shadow-md uppercase  ease-in-out duration-300 ${cssClasses}`,
+        `flex gap-3 items-center justify-center rounded drop-shadow-md uppercase ease-in-out duration-300 ${cssClasses}`,
         {
-          "bg-white px-10 py-3 hover:px-[44px] hover:-mx-1": !backgroundColor,
-          "px-10 py-3 hover:px-[44px] hover:-mx-1": backgroundColor,
-          "px-[36px] py-2 hover:px-[40px] hover:-mx-1": secondaryColor,
+          "bg-white px-10 py-3 desktopSmall:hover:px-[44px] desktopSmall:hover:-mx-1 desktopSmall:hover:bg-white/90":
+            !backgroundColor,
+          "px-10 py-3 desktopSmall:hover:px-[44px] desktopSmall:hover:-mx-1":
+            backgroundColor,
+          "px-[36px] py-[8px] desktopSmall:hover:px-[40px] desktopSmall:hover:-mx-1":
+            secondaryColor,
           "text-black bg-white": !backgroundColor,
           "text-white": backgroundColor && !secondaryColor,
-          "bg-orange hover:bg-orange/90": backgroundColor === "orange",
-          "bg-blue hover:bg-blue/90": backgroundColor === "blue",
-          "bg-darkBlue hover:bg-darkBlue/90": backgroundColor === "darkBlue",
-          "bg-lightBlue hover:bg-lightBlue/90": backgroundColor === "lightBlue",
-          "bg-white border-4 border-orange hover:bg-orange":
+          "bg-orange desktopSmall:hover:bg-orange/90":
+            backgroundColor === "orange",
+          "bg-blue desktopSmall:hover:bg-blue/90": backgroundColor === "blue",
+          "bg-darkBlue desktopSmall:hover:bg-darkBlue/90":
+            backgroundColor === "darkBlue",
+          "bg-lightBlue desktopSmall:hover:bg-lightBlue/90":
+            backgroundColor === "lightBlue",
+          "bg-white border-4 border-orange desktopSmall:hover:bg-orange":
             secondaryColor === "orange",
-          "bg-white border-4 border-blue hover:bg-blue":
+          "bg-white border-4 border-blue desktopSmall:hover:bg-blue":
             secondaryColor === "blue",
-          "bg-white border-4 border-darkBlue hover:bg-darkBlue":
+          "bg-white border-4 border-darkBlue desktopSmall:hover:bg-darkBlue":
             secondaryColor === "darkBlue",
-          "bg-white border-4 border-lightBlue hover:bg-lightBlue":
+          "bg-white border-4 border-lightBlue desktopSmall:hover:bg-lightBlue":
             secondaryColor === "lightBlue",
           "text black": secondaryColor,
         }
@@ -67,6 +80,7 @@ const Button = ({
                 "#005696": arrowColor === "darkBlue",
                 "#00b5cb": arrowColor === "lightBlue",
                 "#f68428": arrowColor === "orange",
+                "#9C5A36": arrowColor === "brown",
               })}
             />
           </g>

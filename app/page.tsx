@@ -1,6 +1,7 @@
+import CardSection from "@/app/_components/home-page/card-section";
+import HeroSection from "./_components/home-page/hero-section";
 import MakeASplashSection from "./_components/home-page/make-a-splash-section";
 import QuoteSection from "./_components/home-page/quote-section";
-import Slider from "./_components/slider";
 
 export const metadata = {
   title: "Adopt A Swimmer",
@@ -10,9 +11,10 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Slider cssClasses="h-[595px] -mt-20 max-w-[1440px] desktopSmall:mx-auto desktopSmall:-mt-[100px]" />
+      <HeroSection cssClasses="h-[595px] w-full object-cover -mt-20 max-w-[1440px] desktopSmall:h-[647px] desktopSmall:mx-auto desktopSmall:-mt-[100px]" />
       <MakeASplashSection />
       <QuoteSection />
+      <CardSection />
     </>
   );
 }

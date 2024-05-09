@@ -61,7 +61,7 @@ const MenuToggle = () => {
           }
         )}
       >
-        <ul className="flex flex-col gap-14 px-5 py-20">
+        <ul className="flex flex-col gap-14 px-8 py-20">
           {data.map(({ title, url }, index) => (
             <li
               key={index}
