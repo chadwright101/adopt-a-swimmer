@@ -5,8 +5,8 @@ import data from "@/app/_data/navigation.json";
 
 const Footer = () => {
   return (
-    <footer className="pb-10 border-t-4 border-darkBlue desktopSmall:pt-10">
-      <div className="grid desktopSmall:max-w-[1100px] desktopSmall:mx-auto desktopSmall:grid-cols-2">
+    <footer className="pb-10 border-t-4 border-darkBlue desktopSmall:pt-10 desktopSmall:pb-5">
+      <div className="grid desktopSmall:gap-5 desktopSmall:max-w-[1100px] desktopSmall:mx-auto desktopSmall:grid-cols-2">
         <div className="relative desktopSmall:hidden">
           <Image
             src="/images/ocean-wave.png"

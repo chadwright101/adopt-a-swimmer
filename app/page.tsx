@@ -2,10 +2,11 @@ import CardSection from "@/app/_components/home-page/card-section";
 import HeroSection from "./_components/home-page/hero-section";
 import MakeASplashSection from "./_components/home-page/make-a-splash-section";
 import QuoteSection from "./_components/home-page/quote-section";
-import ImageSlider from "./_components/image-slider";
+import ImageSlider from "./_components/home-page/image-slider";
 
 import data from "@/app/_data/general-data.json";
 import Image from "next/image";
+import TestimonialsSection from "./_components/home-page/testimonials-section";
 
 export const metadata = {
   title: "Adopt A Swimmer",
@@ -23,7 +24,7 @@ export default function Home() {
       <MakeASplashSection />
       <QuoteSection />
       <CardSection />
-      <div className="relative max-w-[1440px] mx-auto overflow-hidden pb-15">
+      <div className="relative max-w-[1440px] mx-auto overflow-hidden pb-20 desktopSmall:pb-15">
         <Image
           src="/graphics/brush-stroke-7.svg"
           alt="Brush stroke graphic"
@@ -41,6 +42,7 @@ export default function Home() {
             cssClasses="h-full w-full rounded-2xl"
           />
         </div>
+        <TestimonialsSection />
       </div>
     </>
   );
