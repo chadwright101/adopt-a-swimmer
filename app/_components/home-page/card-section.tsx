@@ -52,7 +52,7 @@ const CardSection = () => {
             <Button
               secondaryColor="orange"
               arrowColor="blue"
-              cssClasses="w-full desktopSmall:hover:px-0 desktopSmall:hover:mx-0 px-0"
+              cssClasses="w-full desktopSmall:hover:px-0 desktopSmall:hover:mx-0 px-2"
             >
               Become a sponsor
             </Button>
@@ -79,7 +79,7 @@ const CardSection = () => {
             <Button
               secondaryColor="blue"
               arrowColor="orange"
-              cssClasses="w-full desktopSmall:hover:px-0 desktopSmall:hover:mx-0 px-0"
+              cssClasses="w-full desktopSmall:hover:px-0 desktopSmall:hover:mx-0 px-2"
             >
               Meet the team
             </Button>
