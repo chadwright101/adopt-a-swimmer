@@ -7,6 +7,7 @@ import ImageSlider from "./_components/home-page/image-slider";
 import data from "@/app/_data/general-data.json";
 import Image from "next/image";
 import TestimonialsSection from "./_components/home-page/testimonials-section";
+import ContactSection from "./_components/home-page/contact-sections";
 
 export const metadata = {
   title: "Adopt A Swimmer",
@@ -24,13 +25,20 @@ export default function Home() {
       <MakeASplashSection />
       <QuoteSection />
       <CardSection />
-      <div className="relative max-w-[1440px] mx-auto overflow-hidden pb-20 desktopSmall:pb-15">
+      <div className="relative z-0 max-w-[1440px] mx-auto overflow-hidden pb-20 desktopSmall:pb-15">
         <Image
           src="/graphics/brush-stroke-7.svg"
           alt="Brush stroke graphic"
           width={952}
-          height={1942}
-          className="hidden desktopSmall:block absolute top-0 left-0"
+          height={2258}
+          className="hidden desktopSmall:block absolute top-0 left-0 -z-10 h-full object-cover"
+        />
+        <Image
+          src="/graphics/brush-stroke-8.svg"
+          alt="Brush stroke graphic"
+          width={500}
+          height={2000}
+          className="desktopSmall:hidden -z-10 absolute -bottom-20 -left-8 h-[2000px] phone:h-[4000px] phone:left-0 tablet:h-[6000px] w-full object-cover"
         />
         <div className="h-[550px] tablet:h-[650px] desktopSmall:hidden">
           <ImageSlider data={imageSlides} cssClasses="h-full w-full" />
@@ -43,6 +51,7 @@ export default function Home() {
           />
         </div>
         <TestimonialsSection />
+        <ContactSection />
       </div>
     </>
   );

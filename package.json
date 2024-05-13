@@ -10,9 +10,14 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "isomorphic-dompurify": "^2.9.0",
     "next": "14.2.3",
+    "nodemailer": "^6.9.13",
     "react": "^18",
     "react-dom": "^18",
+    "react-google-recaptcha": "^3.1.0",
     "swiper": "^11.1.1"
   },
   "devDependencies": {

@@ -9,7 +9,6 @@ interface Props {
   phoneWidth: number;
   tabletWidth: number;
   desktopWidth: number;
-  alt?: string;
 }
 
 const ImageComponent = ({
@@ -21,34 +20,25 @@ const ImageComponent = ({
   phoneWidth,
   tabletWidth,
   desktopWidth,
-  alt,
 }: Props) => {
   return (
     <picture className={pictureCssClasses}>
-      <Image
-        src={file}
-        alt={`Adopt A Swimmer - Plettenberg Bay || ${alt}`}
-        loading={priority ? "eager" : "lazy"}
-        width={desktopWidth}
-        height={desktopWidth * 1.25}
-        className={`rounded-2xl ${cssClasses}`}
-      />
-      {/* <source
+      <source
         media="(max-width:425px)"
-        srcSet={`https://ik.imagekit.io/thewrightdesigns/monks-medical/${folder}/tr:w-${phoneWidth},q-75/${file}`}
+        srcSet={`https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/${folder}/tr:w-${phoneWidth},q-70/${file}`}
       />
       <source
         media="(max-width:800px)"
-        srcSet={`https://ik.imagekit.io/thewrightdesigns/monks-medical/${folder}/tr:w-${tabletWidth},q-75/${file}`}
+        srcSet={`https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/${folder}/tr:w-${tabletWidth},q-70/${file}`}
       />
       <Image
-        src={`https://ik.imagekit.io/thewrightdesigns/monks-medical/${folder}/tr:w-${desktopWidth},q-75/${file}`}
-        alt={`Adopt A Swimmer - Plettenberg Bay || ${alt}`}
+        src={`https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/${folder}/tr:w-${desktopWidth},q-70/${file}`}
+        alt="Adopt A Swimmer - Plettenberg Bay"
         loading={priority ? "eager" : "lazy"}
         width={desktopWidth}
         height={desktopWidth * 1.25}
         className={`rounded-2xl ${cssClasses}`}
-      /> */}
+      />
     </picture>
   );
 };

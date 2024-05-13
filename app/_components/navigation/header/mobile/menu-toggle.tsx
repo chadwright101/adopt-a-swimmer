@@ -71,7 +71,7 @@ const MenuToggle = () => {
                 "translate-x-0": showMenu,
               })}
             >
-              <Link className="text-subheading text-white" href={url}>
+              <Link className="text-subheading text-white font-thin" href={url}>
                 {title}
               </Link>
             </li>

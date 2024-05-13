@@ -2,17 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 import data from "@/app/_data/navigation.json";
+import ImageComponent from "../../image-component";
 
 const Footer = () => {
   return (
-    <footer className="pb-10 border-t-4 border-darkBlue desktopSmall:pt-10 desktopSmall:pb-5">
+    <footer className="pb-10 border-t-4 border-darkBlue desktopSmall:pt-10 desktopSmall:pb-5 desktopSmall:px-10">
       <div className="grid desktopSmall:gap-5 desktopSmall:max-w-[1100px] desktopSmall:mx-auto desktopSmall:grid-cols-2">
         <div className="relative desktopSmall:hidden">
-          <Image
-            src="/images/ocean-wave.png"
-            alt="Ocean wave"
-            width={1140}
-            height={400}
+          <ImageComponent
+            file="ocean-wave.png"
+            folder="images"
+            phoneWidth={425}
+            tabletWidth={800}
+            desktopWidth={1100}
           />
           <p className="py-[6px] px-1 bg-white/80 absolute top-4 left-0 text-[12px]">
             © Matt Leppan
@@ -23,7 +25,7 @@ const Footer = () => {
             <li key={index} className="text-[14px]">
               <Link
                 href={url}
-                className="desktopSmall:hover:text-orange ease-in-out duration-200"
+                className="desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
               >
                 {title}
               </Link>
@@ -32,7 +34,7 @@ const Footer = () => {
         </ul>
         <div className="grid place-items-center gap-7 -mt-10 phone:-mt-15 min-[600px]:-mt-20 min-[700px]:-mt-[100px] min-[800px]:-mt-[125px] min-[900px]:-mt-[140px] min-[1000px]:-mt-[155px] desktopSmall:mt-0 desktopSmall:place-items-end">
           <Image
-            src="/adopt-a-swimmer-logo.png"
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/adopt-a-swimmer-logo.png"
             alt="Logo"
             width={125}
             height={85}
@@ -44,7 +46,7 @@ const Footer = () => {
               <Link
                 href="https://thewrightdesigns.co.za"
                 target="_blank"
-                className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200"
+                className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
               >
                 The Wright Designs
               </Link>
@@ -54,7 +56,7 @@ const Footer = () => {
               © Adopt A Swimmer |{" "}
               <Link
                 href="https://adoptaswimmer.co.za"
-                className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200"
+                className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
               >
                 www.adoptaswimmer.co.za
               </Link>
@@ -65,7 +67,7 @@ const Footer = () => {
           © Adopt A Swimmer |{" "}
           <Link
             href="https://adoptaswimmer.co.za"
-            className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200"
+            className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
           >
             www.adoptaswimmer.co.za
           </Link>

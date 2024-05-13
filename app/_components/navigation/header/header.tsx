@@ -26,7 +26,8 @@ const Header = ({ isScrolled }: Props) => {
           className="desktopSmall:self-start hover:desktopSmall:opacity-90 ease-in-out duration-200 z-10"
         >
           <Image
-            src="/adopt-a-swimmer-logo.png"
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/adopt-a-swimmer-logo.png"
+            priority
             alt="Adopt a Swimmer Logo"
             className={classNames(
               "drop-shadow-default ease-in-out duration-500",
@@ -45,7 +46,7 @@ const Header = ({ isScrolled }: Props) => {
             {data.map(({ title, url }, index) => (
               <li key={index}>
                 <Link
-                  className="text-[15px] desktopSmall:hover:text-orange ease-in-out duration-200"
+                  className="text-[15px] desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
                   href={url}
                 >
                   {title}

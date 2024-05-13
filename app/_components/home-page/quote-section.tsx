@@ -6,10 +6,10 @@ const QuoteSection = () => {
     <article className="bg-darkBlue py-15 px-5 relative max-w-[1440px] tablet:grid grid-cols-2 place-items-center gap-5 desktopSmall:block desktopSmall:mx-auto">
       <div className="relative w-full aspect-[1.5/2] mb-10 z-10 tablet:-mb-4 desktopSmall:m-0 desktopSmall:hidden">
         <ImageComponent
-          file="/images/DSC_1549.jpg"
-          phoneWidth={320}
-          tabletWidth={320}
-          desktopWidth={320}
+          file="/DSC_1549.jpg"
+          phoneWidth={400}
+          tabletWidth={750}
+          desktopWidth={427}
           folder="images"
           cssClasses="w-full h-full object-cover"
         />

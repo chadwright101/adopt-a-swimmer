@@ -21,15 +21,15 @@ const CardSection = () => {
               into water. Let’s improve the quality of lives, together.
             </p>
           </div>
-          <Link href="/about-us">
-            <Button
-              secondaryColor="lightBlue"
-              arrowColor="brown"
-              cssClasses="w-full text-[15px] desktopSmall:hover:px-0 desktopSmall:hover:mx-0"
-            >
-              About us
-            </Button>
-          </Link>
+          <Button
+            secondaryColor="lightBlue"
+            arrowColor="brown"
+            cssClasses="w-full text-[15px] desktopSmall:hover:px-0 desktopSmall:hover:mx-0"
+            noArrow
+            url="/about-us"
+          >
+            About us
+          </Button>
         </li>
 
         <li className="bg-blue max-w-[280px] min-h-[400px] px-5 py-8 rounded-2xl border-[12px] border-white flex flex-col justify-between relative">
@@ -48,15 +48,15 @@ const CardSection = () => {
               volunteers, and sponsors.
             </p>
           </div>
-          <Link href="/sponsorship">
-            <Button
-              secondaryColor="orange"
-              arrowColor="blue"
-              cssClasses="w-full text-[15px] desktopSmall:hover:px-2 desktopSmall:hover:mx-0 px-2"
-            >
-              Become a sponsor
-            </Button>
-          </Link>
+          <Button
+            secondaryColor="orange"
+            arrowColor="blue"
+            cssClasses="w-full text-[15px] desktopSmall:hover:px-0 desktopSmall:hover:mx-0"
+            noArrow
+            url="/sponsorship"
+          >
+            Become a sponsor
+          </Button>
         </li>
 
         <li className="bg-orange max-w-[280px] min-h-[400px] px-5 py-8 rounded-2xl border-[12px] border-white flex flex-col justify-between relative">
@@ -75,15 +75,15 @@ const CardSection = () => {
               us at the beach and you’ll see us in action.
             </p>
           </div>
-          <Link href="/meet-the-team">
-            <Button
-              secondaryColor="blue"
-              arrowColor="orange"
-              cssClasses="w-full text-[15px] desktopSmall:hover:px-2 desktopSmall:hover:mx-0 px-2"
-            >
-              Meet the team
-            </Button>
-          </Link>
+          <Button
+            secondaryColor="blue"
+            arrowColor="orange"
+            cssClasses="w-full text-[15px] desktopSmall:hover:px-0 desktopSmall:hover:mx-0"
+            noArrow
+            url="/meet-the-team"
+          >
+            Meet the team
+          </Button>
         </li>
       </ul>
     </section>

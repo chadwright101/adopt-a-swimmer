@@ -15,8 +15,8 @@ const MakeASplashSection = () => {
       <div className="desktopSmall:grid grid-cols-2 gap-10 max-w-[1100px] desktopSmall:mx-auto">
         <div className="bg-orange aspect-square z-10 w-full min-[600px]:h-[400px] tablet:h-[600px] tablet:p-8 rounded-tl-full rounded-bl-full p-5 ml-auto desktopSmall:p-0 desktopSmall:bg-none desktopSmall:rounded-none desktopSmall:order-2 desktopSmall:aspect-auto desktopSmall:h-full">
           <ImageComponent
-            file="/images/DSC_1507.jpg"
-            phoneWidth={400}
+            file="/DSC_1507.jpg"
+            phoneWidth={450}
             tabletWidth={800}
             desktopWidth={800}
             folder="images"
@@ -46,6 +46,7 @@ const MakeASplashSection = () => {
           <Button
             arrowColor="lightBlue"
             cssClasses="w-full desktopSmall:w-auto"
+            url="/about-us"
           >
             View More
           </Button>

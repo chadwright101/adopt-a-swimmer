@@ -38,9 +38,8 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
               <ImageComponent
                 file={slide}
                 folder="images"
-                priority={index === 0 ? true : false}
-                phoneWidth={10}
-                tabletWidth={10}
+                phoneWidth={825}
+                tabletWidth={825}
                 desktopWidth={1100}
                 cssClasses="rounded-none w-full h-full object-cover"
               />
@@ -98,10 +97,9 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
             <ImageComponent
               file={slide}
               folder="images"
-              priority={index === 0 ? true : false}
-              phoneWidth={425}
-              tabletWidth={800}
-              desktopWidth={10}
+              phoneWidth={825}
+              tabletWidth={825}
+              desktopWidth={1100}
               cssClasses="rounded-none w-full h-full object-cover"
             />
           </SwiperSlide>
