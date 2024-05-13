@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <HeroSection cssClasses="h-[595px] w-full object-cover -mt-20 max-w-[1440px] desktopSmall:h-[647px] desktopSmall:mx-auto desktopSmall:-mt-[100px]" />
+      <HeroSection cssClasses="h-[595px] w-full object-cover max-w-[1440px] desktopSmall:h-[647px] desktopSmall:mx-auto" />
       <MakeASplashSection />
       <QuoteSection />
       <CardSection />

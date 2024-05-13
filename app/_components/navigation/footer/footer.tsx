@@ -15,6 +15,7 @@ const Footer = () => {
             phoneWidth={425}
             tabletWidth={800}
             desktopWidth={1100}
+            cssClasses="rounded-none"
           />
           <p className="py-[6px] px-1 bg-white/80 absolute top-4 left-0 text-[12px]">
             © Matt Leppan

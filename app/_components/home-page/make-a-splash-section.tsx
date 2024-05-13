@@ -46,7 +46,7 @@ const MakeASplashSection = () => {
           <Button
             arrowColor="lightBlue"
             cssClasses="w-full desktopSmall:w-auto"
-            url="/about-us"
+            url="/about"
           >
             View More
           </Button>

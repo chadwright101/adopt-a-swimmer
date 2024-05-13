@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -71,7 +70,11 @@ const MenuToggle = () => {
                 "translate-x-0": showMenu,
               })}
             >
-              <Link className="text-subheading text-white font-thin" href={url}>
+              <Link
+                className="text-subheading text-white font-thin"
+                href={url}
+                onClick={() => setShowMenu(false)}
+              >
                 {title}
               </Link>
             </li>

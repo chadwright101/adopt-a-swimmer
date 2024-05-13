@@ -23,7 +23,6 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
           autoplay={{
             delay: 4000,
           }}
-          loop={true}
           speed={1000}
           effect="fade"
           modules={[Autoplay, EffectFade, Navigation]}
@@ -84,7 +83,6 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
           delay: 4000,
         }}
         spaceBetween={16}
-        loop={true}
         speed={1000}
         modules={[Autoplay, Pagination]}
         className={cssClasses}

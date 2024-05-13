@@ -88,6 +88,7 @@ const ContactForm = ({ blueBackground }: Props) => {
                 "border border-black/50 bg-white": !blueBackground,
               })}
               placeholder="Email address goes here..."
+              autoComplete="email"
             />
           </label>
 
@@ -112,6 +113,7 @@ const ContactForm = ({ blueBackground }: Props) => {
                 }
               )}
               placeholder="Name goes here..."
+              autoComplete="name"
             />
           </label>
 

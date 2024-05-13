@@ -43,7 +43,7 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
         window.removeEventListener("resize", handleResize);
       };
     }
-  }, []);
+  }, [testimonials.length]);
 
   const toggleFullQuote = () => {
     setShowFullQuote(new Array(testimonials.length).fill(true));
@@ -60,7 +60,6 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
             delay: 10000,
           }}
           spaceBetween={16}
-          loop={true}
           speed={750}
           modules={[Autoplay, Pagination, Navigation]}
           className={cssClasses}

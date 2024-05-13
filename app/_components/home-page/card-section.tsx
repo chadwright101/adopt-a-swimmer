@@ -26,7 +26,7 @@ const CardSection = () => {
             arrowColor="brown"
             cssClasses="w-full text-[15px] desktopSmall:hover:px-0 desktopSmall:hover:mx-0"
             noArrow
-            url="/about-us"
+            url="/about"
           >
             About us
           </Button>
