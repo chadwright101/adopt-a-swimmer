@@ -47,10 +47,11 @@ const Header = ({ isScrolled }: Props) => {
             id="curve"
             xmlns="http://www.w3.org/2000/svg"
             className={classNames(
-              "absolute -top-[30px] -left-4 z-0 w-[167px] h-auto ease-in-out ",
+              "absolute -top-[30px] -left-4 z-0 w-[167px] h-auto desktopSmall:ease-in-out ",
               {
-                "opacity-0 duration-150": isScrolled,
-                "opacity-100 delay-200 duration-500": !isScrolled,
+                "opacity-0 desktopSmall:duration-150": isScrolled,
+                "opacity-100 desktopSmall:delay-200 desktopSmall:duration-500":
+                  !isScrolled,
               }
             )}
             role="heading"
@@ -64,11 +65,11 @@ const Header = ({ isScrolled }: Props) => {
               />
             </defs>
             <ellipse cx="100" cy="105" rx="75" ry="49" fill="transparent" />
-            <text fill="#ffa500" dy="0" text-anchor="middle">
+            <text fill="#ffa500" dy="0" textAnchor="middle">
               <textPath
                 href="#myCurvePath"
                 startOffset="50%"
-                className=" font-reenieBeanie text-[29.25px]"
+                className="font-reenieBeanie text-[29.25px]"
               >
                 Adopt A Swimmer
               </textPath>
@@ -76,10 +77,10 @@ const Header = ({ isScrolled }: Props) => {
           </svg>
           <h2
             className={classNames(
-              "font-roboto uppercase font-bold text-white absolute ease-in-out duration-500",
+              "font-roboto uppercase font-bold text-white absolute desktopSmall:ease-in-out desktopSmall:duration-500",
               {
                 "text-[2.25px] bottom-[40px] left-[53.5px]": isScrolled,
-                "text-[7.65px] bottom-[0.25px] left-[29px]": !isScrolled,
+                "text-[7.65px] bottom-[1px] left-[29.5px]": !isScrolled,
               }
             )}
           >

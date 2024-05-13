@@ -7,7 +7,7 @@ import ImageSlider from "./_components/home-page/image-slider";
 import data from "@/app/_data/general-data.json";
 import Image from "next/image";
 import TestimonialsSection from "./_components/home-page/testimonials-section";
-import ContactSection from "./_components/home-page/contact-sections";
+import ContactSection from "./_components/home-page/contact-section";
 
 export const metadata = {
   title: "Adopt A Swimmer",

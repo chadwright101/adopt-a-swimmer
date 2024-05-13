@@ -24,6 +24,11 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
   );
 
   const [windowWidth, setWindowWidth] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleSlideChange = (swiper) => {
+    setCurrentIndex(swiper.activeIndex);
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -56,6 +61,7 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
           Testimonials
         </h3>
         <Swiper
+          onSlideChange={handleSlideChange}
           autoplay={{
             delay: 10000,
           }}
@@ -96,8 +102,11 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
             </SwiperSlide>
           ))}
           <button
-            className="swiper-button-prev hidden desktopSmall:grid absolute top-[75%] z-10 left-10 cursor-pointer place-items-center p-2 rounded-full bg-white/[80%] hover:bg-white/90 ease-in-out duration-300 border-2 border-lightBlue"
+            className={`swiper-button-prev hidden desktopSmall:grid absolute top-[75%] z-10 left-10 cursor-pointer place-items-center p-2 rounded-full bg-white/[80%] hover:bg-white/90 ease-in-out duration-300 border-2 border-lightBlue ${
+              currentIndex === 0 ? "opacity-50 cursor-default" : ""
+            }`}
             aria-label="Show previous image"
+            disabled={currentIndex === 0}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,8 +120,13 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
             </svg>
           </button>
           <button
-            className="swiper-button-next hidden desktopSmall:grid absolute top-[75%] z-10 right-10 cursor-pointer place-items-center p-2 rounded-full bg-white/[80%] hover:bg-white/90 ease-in-out duration-300 border-2 border-lightBlue"
+            className={`swiper-button-next hidden desktopSmall:grid absolute top-[75%] z-10 right-10 cursor-pointer place-items-center p-2 rounded-full bg-white/[80%] hover:bg-white/90 ease-in-out duration-300 border-2 border-lightBlue ${
+              currentIndex === testimonials.length - 1
+                ? "opacity-50 cursor-default"
+                : ""
+            }`}
             aria-label="Show next image"
+            disabled={currentIndex === testimonials.length - 1}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

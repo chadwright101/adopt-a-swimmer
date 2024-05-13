@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 
@@ -16,13 +18,18 @@ interface Props {
 }
 
 const Slider = ({ cssClasses, desktop, data }: Props) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleSlideChange = (swiper) => {
+    setCurrentIndex(swiper.activeIndex);
+  };
+
   if (desktop) {
     return (
       <>
         <Swiper
-          autoplay={{
-            delay: 4000,
-          }}
+          onSlideChange={handleSlideChange}
+          autoplay={{ delay: 4000 }}
           speed={1000}
           effect="fade"
           modules={[Autoplay, EffectFade, Navigation]}
@@ -45,8 +52,11 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
             </SwiperSlide>
           ))}
           <button
-            className="swiper-button-prev absolute top-[48%] z-10 left-10 cursor-pointer grid place-items-center p-2 rounded-full bg-white/[80%] hover:bg-white/90 ease-in-out duration-300 border-2 border-lightBlue"
+            className={`swiper-button-prev absolute top-[48%] z-10 left-10 cursor-pointer grid place-items-center p-2 rounded-full bg-white/[80%] hover:bg-white/90 ease-in-out duration-300 border-2 border-lightBlue ${
+              currentIndex === 0 ? "opacity-50 cursor-default" : ""
+            }`}
             aria-label="Show previous image"
+            disabled={currentIndex === 0}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,8 +70,13 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
             </svg>
           </button>
           <button
-            className="swiper-button-next absolute top-[48%] z-10 right-10 cursor-pointer grid place-items-center p-2 rounded-full bg-white/[80%] hover:bg-white/90 ease-in-out duration-300 border-2 border-lightBlue"
+            className={`swiper-button-next absolute top-[48%] z-10 right-10 cursor-pointer grid place-items-center p-2 rounded-full bg-white/[80%] hover:bg-white/90 ease-in-out duration-300 border-2 border-lightBlue ${
+              currentIndex === data.length - 1
+                ? "opacity-50 cursor-default"
+                : ""
+            }`}
             aria-label="Show next image"
+            disabled={currentIndex === data.length - 1}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
