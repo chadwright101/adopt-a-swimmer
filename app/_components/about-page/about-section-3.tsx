@@ -46,7 +46,7 @@ const AboutSection3 = () => {
         </div>
         <hr className="my-10 text-black/25 desktopSmall:hidden" />
         <div className="desktopSmall:grid gap-10 grid-cols-2 desktopSmall:mt-15">
-          <h3 className="desktopSmall:col-span-2">
+          <h3 className="mb-10 desktopSmall:col-span-2 desktopSmall:mb-0">
             Why we need partners and sponsors
           </h3>
           <div className="grid gap-10">
