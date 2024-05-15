@@ -1,11 +1,15 @@
-import AboutSection from "../_components/about-page/about-section";
+import AboutSection1 from "../_components/about-page/about-section-1";
+import AboutSection2 from "../_components/about-page/about-section-2";
+import AboutSection3 from "../_components/about-page/about-section-3";
 import HeroSection from "../_components/about-page/hero-section";
 
 const About = () => {
   return (
     <>
       <HeroSection />
-      <AboutSection />
+      <AboutSection1 />
+      <AboutSection2 />
+      <AboutSection3 />
     </>
   );
 };

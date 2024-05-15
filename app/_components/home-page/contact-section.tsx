@@ -12,7 +12,7 @@ const ContactSection = () => {
           folder="images"
           phoneWidth={10}
           tabletWidth={10}
-          desktopWidth={840}
+          desktopWidth={1100}
           cssClasses="hidden desktopSmall:block h-full object-cover"
         />
       </div>

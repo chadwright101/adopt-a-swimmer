@@ -52,10 +52,18 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
 
   const toggleFullQuote = () => {
     setShowFullQuote(new Array(testimonials.length).fill(true));
+
+    const element = document.getElementById("testimonials");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <article className="py-15 bg-lightBlue px-5 max-w-[1100px] desktopSmall:rounded-2xl m-auto desktopSmall:px-10 desktopSmall:mt-15">
+    <article
+      id="testimonials"
+      className="py-15 bg-lightBlue px-5 max-w-[1100px] desktopSmall:rounded-2xl m-auto desktopSmall:px-10 desktopSmall:mt-15"
+    >
       <div className="py-10 border-y-4 border-white/80">
         <h3 className="text-center text-white mb-15 desktopSmall:mb-10">
           Testimonials
