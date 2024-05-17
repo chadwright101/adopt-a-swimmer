@@ -18,6 +18,7 @@ const {
 const ActiveSponsorsSlider = () => {
   return (
     <Swiper
+      slidesPerView={2}
       spaceBetween={10}
       breakpoints={{
         425: {
@@ -39,7 +40,10 @@ const ActiveSponsorsSlider = () => {
         delay: 0,
         disableOnInteraction: false,
       }}
-      pagination={{ clickable: false }}
+      pagination={{
+        clickable: false,
+        dynamicBullets: true,
+      }}
       modules={[Autoplay, Pagination]}
     >
       <ul>
@@ -56,7 +60,7 @@ const ActiveSponsorsSlider = () => {
                   width={160}
                   height={160}
                   alt={alt}
-                  className="w-[160px] h-auto rounded-none"
+                  className="w-[120px] min-[380px]:w-[160px] h-auto rounded-none"
                 />
               </Link>
             </SwiperSlide>
