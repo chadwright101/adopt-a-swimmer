@@ -37,7 +37,7 @@ const ImageComponent = ({
         loading={priority ? "eager" : "lazy"}
         width={desktopWidth}
         height={desktopWidth * 1.25}
-        className={`rounded-2xl ${cssClasses}`}
+        className={`rounded-2xl drop-shadow-default ${cssClasses}`}
       />
     </picture>
   );

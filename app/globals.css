@@ -66,4 +66,11 @@
       transform: rotate(360deg);
     }
   }
+
+  .swiper-container-free-mode>.swiper-wrapper {
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    margin: 0 auto;
+  }
 }

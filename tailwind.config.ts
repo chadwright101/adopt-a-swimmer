@@ -14,6 +14,7 @@ const config: Config = {
       darkBlue: "#005696",
       white: "#fff",
       black: "#1b1b1b",
+      beige: "#E1B88A",
       brown: "#9C5A36",
       link: "#0000FF",
       none: "transparent",
@@ -26,6 +27,7 @@ const config: Config = {
     fontWeight: {
       thin: "200",
       regular: "500",
+      semiBold: "700",
       bold: "900",
     },
     fontSize: {

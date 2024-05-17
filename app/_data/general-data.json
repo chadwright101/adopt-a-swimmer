@@ -65,6 +65,40 @@
       }
     ]
   },
+  "sponsorshipsPage": {
+    "activeSponsors": [
+      {
+        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/carved-media.png",
+        "alt": "Carved Media logo",
+        "link": "https://carvedmedia.com/"
+      },
+      {
+        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/delicious-bokeh.png",
+        "alt": "Delicious Bokeh logo",
+        "link": "https://deliciousbokeh.com/"
+      },
+      {
+        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/sasfin-logo+1.png",
+        "alt": "Sasfin Bank logo",
+        "link": "https://sasfin.com/"
+      },
+      {
+        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/the-fat-fish.png",
+        "alt": "The Fat Fish logo",
+        "link": "https://thefatfish.co.za/"
+      },
+      {
+        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/the-wright-designs.jpg",
+        "alt": "The Wright Designs logo",
+        "link": "https://thewrightdesigns.co.za/"
+      },
+      {
+        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/tsogo-sun.png",
+        "alt": "Tsogo Sun logo",
+        "link": "https://www.tsogosun.com/"
+      }
+    ]
+  },
   "contactPage": {
     "email": "louise@adoptaswimmer.co.za",
     "phone": "+27 82 452 2248"

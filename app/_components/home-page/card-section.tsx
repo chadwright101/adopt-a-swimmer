@@ -53,7 +53,7 @@ const CardSection = () => {
             arrowColor="blue"
             cssClasses="w-full text-[15px] desktopSmall:hover:px-0 desktopSmall:hover:mx-0"
             noArrow
-            url="/sponsorship"
+            url="/sponsorships"
           >
             Become a sponsor
           </Button>

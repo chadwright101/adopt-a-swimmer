@@ -93,7 +93,11 @@ const AboutSection1 = () => {
             strength to strength ever since, continuing to positively impact the
             lives of every child the program has touched over the years.
           </p>
-          <Button secondaryColor="orange" arrowColor="black">
+          <Button
+            secondaryColor="orange"
+            arrowColor="black"
+            url="/sponsorships"
+          >
             Sponsorships
           </Button>
         </div>

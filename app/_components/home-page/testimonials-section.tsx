@@ -70,9 +70,6 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
         </h3>
         <Swiper
           onSlideChange={handleSlideChange}
-          autoplay={{
-            delay: 10000,
-          }}
           spaceBetween={16}
           speed={750}
           modules={[Autoplay, Pagination, Navigation]}
