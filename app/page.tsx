@@ -1,13 +1,13 @@
-import CardSection from "@/app/_components/home-page/card-section";
-import HeroSection from "./_components/home-page/hero-section";
-import MakeASplashSection from "./_components/home-page/make-a-splash-section";
-import QuoteSection from "./_components/home-page/quote-section";
-import ImageSlider from "./_components/home-page/image-slider";
+import CardSection from "@/app/_components/pages/home-page/card-section";
+import HeroSection from "./_components/pages/home-page/hero-section";
+import MakeASplashSection from "./_components/pages/home-page/make-a-splash-section";
+import QuoteSection from "./_components/pages/home-page/quote-section";
+import ImageSlider from "./_components/pages/home-page/image-slider";
 
 import data from "@/app/_data/general-data.json";
 import Image from "next/image";
-import TestimonialsSection from "./_components/home-page/testimonials-section";
-import ContactSection from "./_components/home-page/contact-section";
+import TestimonialsSection from "./_components/pages/home-page/testimonials-section";
+import ContactSection from "./_components/pages/home-page/contact-section";
 
 export const metadata = {
   title: "Adopt A Swimmer",

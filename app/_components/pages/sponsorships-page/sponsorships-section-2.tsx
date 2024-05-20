@@ -1,5 +1,5 @@
-import Button from "../button";
-import ImageComponent from "../image-component";
+import Button from "../../button";
+import ImageComponent from "../../image-component";
 import ActiveSponsorsSlider from "./active-sponsors-slider";
 
 const SponsorshipsSection2 = () => {
@@ -89,7 +89,7 @@ const SponsorshipsSection2 = () => {
             desktopWidth={1100}
             cssClasses="h-full w-full object-cover aspect-video desktopSmall:h-[472px]"
           />
-          <div className="desktopSmall:order-first">
+          <div className="grid desktopSmall:order-first">
             <p>
               By contributing to the Adopt a Swimmer program, you are directly
               impacting the lives of these children, giving them access to
@@ -108,7 +108,7 @@ const SponsorshipsSection2 = () => {
             <Button
               secondaryColor="lightBlue"
               arrowColor="black"
-              cssClasses="w-full mt-10 desktopSmall:w-auto"
+              cssClasses="mt-10 "
               url="/contact"
             >
               Find out More

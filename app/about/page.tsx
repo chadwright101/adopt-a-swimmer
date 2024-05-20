@@ -1,7 +1,7 @@
-import AboutSection1 from "../_components/about-page/about-section-1";
-import AboutSection2 from "../_components/about-page/about-section-2";
-import AboutSection3 from "../_components/about-page/about-section-3";
-import HeroSection from "../_components/about-page/hero-section";
+import AboutSection1 from "../_components/pages/about-page/about-section-1";
+import AboutSection2 from "../_components/pages/about-page/about-section-2";
+import AboutSection3 from "../_components/pages/about-page/about-section-3";
+import HeroSection from "../_components/pages/about-page/hero-section";
 
 const About = () => {
   return (

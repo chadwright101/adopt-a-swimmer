@@ -1,5 +1,5 @@
-import Button from "../button";
-import ImageComponent from "../image-component";
+import Button from "../../button";
+import ImageComponent from "../../image-component";
 
 const SponsorshipsSection1 = () => {
   return (
@@ -19,7 +19,7 @@ const SponsorshipsSection1 = () => {
               many children on the waiting list from outlying areas and from
               Born in Africa. These are all children we would love to support.
             </p>
-            <div>
+            <div className="grid">
               <p>
                 Our programme is age–appropriate and includes the following over
                 and above learning to swim:
@@ -38,7 +38,7 @@ const SponsorshipsSection1 = () => {
               <Button
                 backgroundColor="orange"
                 arrowColor="white"
-                cssClasses="w-full mt-10 desktopSmall:w-auto"
+                cssClasses="mt-10 desktopSmall:place-self-start"
               >
                 Become a sponsor
               </Button>

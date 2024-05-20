@@ -41,7 +41,7 @@ const ActiveSponsorsSlider = () => {
         disableOnInteraction: false,
       }}
       pagination={{
-        clickable: false,
+        clickable: true,
         dynamicBullets: true,
       }}
       modules={[Autoplay, Pagination]}

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Button from "../button";
-import ImageComponent from "../image-component";
+import Button from "../../button";
+import ImageComponent from "../../image-component";
 
 const MakeASplashSection = () => {
   return (
@@ -23,7 +23,7 @@ const MakeASplashSection = () => {
             cssClasses="object-cover w-full h-full rounded-t-full rounded-bl-full desktopSmall:rounded-2xl"
           />
         </div>
-        <div className="px-5 -mt-[55px] z-10 min-[600px]:mt-10 desktopSmall:px-0 desktopSmall:mt-0">
+        <div className="px-5 -mt-[55px] relative z-20 min-[600px]:mt-10 desktopSmall:px-0 desktopSmall:mt-0">
           <h2 className=" text-heading text-white">Ready to make a splash?</h2>
           <div className="grid gap-4 my-10">
             <p className="text-white">

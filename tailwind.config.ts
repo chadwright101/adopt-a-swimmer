@@ -22,7 +22,7 @@ const config: Config = {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
       barrio: ["Barrio", "system-ui"],
-      reenieBeanie: ["Reenie Beanie", "cursive"],
+      caveat: ["Caveat", "cursive"],
     },
     fontWeight: {
       thin: "200",

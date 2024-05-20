@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import data from "@/app/_data/navigation.json";
 import classNames from "classnames";
@@ -20,6 +21,8 @@ const MenuToggle = () => {
       document.body.style.overflow = "auto";
     };
   }, [showMenu]);
+
+  const currentRoute = usePathname();
 
   return (
     <>
@@ -71,7 +74,10 @@ const MenuToggle = () => {
               })}
             >
               <Link
-                className="text-subheading text-white font-thin"
+                className={classNames("text-subheading text-white font-thin", {
+                  "border-b-[3px] border-orange pb-[6px] -mb-[6px]":
+                    currentRoute === url,
+                })}
                 href={url}
                 onClick={() => setShowMenu(false)}
               >

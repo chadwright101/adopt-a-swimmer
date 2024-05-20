@@ -1,5 +1,5 @@
-import ContactForm from "../contact-form";
-import ImageComponent from "../image-component";
+import ContactForm from "../../contact-form";
+import ImageComponent from "../../image-component";
 
 const ContactSection = () => {
   return (

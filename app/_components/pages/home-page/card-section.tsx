@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "../button";
+import Button from "../../button";
 import Image from "next/image";
 
 const CardSection = () => {
@@ -51,7 +51,7 @@ const CardSection = () => {
           <Button
             secondaryColor="orange"
             arrowColor="blue"
-            cssClasses="w-full text-[15px] desktopSmall:hover:px-0 desktopSmall:hover:mx-0"
+            cssClasses="w-full text-[15px] desktopSmall:hover:px-1 desktopSmall:hover:mx-0"
             noArrow
             url="/sponsorships"
           >
@@ -78,7 +78,7 @@ const CardSection = () => {
           <Button
             secondaryColor="blue"
             arrowColor="orange"
-            cssClasses="w-full text-[15px] desktopSmall:hover:px-0 desktopSmall:hover:mx-0"
+            cssClasses="w-full text-[15px] desktopSmall:hover:px-1 desktopSmall:hover:mx-0"
             noArrow
             url="/meet-the-team"
           >

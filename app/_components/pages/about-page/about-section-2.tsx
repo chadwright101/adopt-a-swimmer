@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImageComponent from "../image-component";
+import ImageComponent from "../../image-component";
 
 const AboutSection2 = () => {
   return (

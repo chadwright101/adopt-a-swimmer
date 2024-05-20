@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import data from "@/app/_data/navigation.json";
 import MenuToggle from "./mobile/menu-toggle";
@@ -10,6 +11,8 @@ interface Props {
 }
 
 const Header = ({ isScrolled }: Props) => {
+  const currentRoute = usePathname();
+
   return (
     <header
       className={classNames(
@@ -69,7 +72,7 @@ const Header = ({ isScrolled }: Props) => {
               <textPath
                 href="#myCurvePath"
                 startOffset="50%"
-                className="font-reenieBeanie text-[29.25px]"
+                className="font-caveat font-[100] text-[29.25px]"
               >
                 Adopt A Swimmer
               </textPath>
@@ -93,7 +96,12 @@ const Header = ({ isScrolled }: Props) => {
             {data.map(({ title, url }, index) => (
               <li key={index}>
                 <Link
-                  className="text-[15px] desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
+                  className={classNames(
+                    "text-[15px] desktopSmall:hover:text-orange ease-in-out duration-200 font-thin underline-offset-[6px] decoration-lightBlue decoration-2",
+                    {
+                      underline: currentRoute === url,
+                    }
+                  )}
                   href={url}
                 >
                   {title}

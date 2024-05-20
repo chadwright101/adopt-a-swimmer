@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ImageComponent from "../image-component";
-import Button from "../button";
+import ImageComponent from "../../image-component";
+import Button from "../../button";
 import Link from "next/link";
 
 const AboutSection3 = () => {
@@ -38,7 +38,7 @@ const AboutSection3 = () => {
               file="DSC_1464.jpg"
               folder="images"
               phoneWidth={425}
-              tabletWidth={425}
+              tabletWidth={800}
               desktopWidth={530}
               cssClasses="aspect-video object-cover h-full w-full"
             />
@@ -49,52 +49,54 @@ const AboutSection3 = () => {
           <h3 className="mb-10 desktopSmall:col-span-2 desktopSmall:mb-0">
             Why we need partners and sponsors
           </h3>
-          <div className="grid gap-10">
-            <div>
-              <p>
-                We have all the love, passion, skills, and experience in the
-                world – but we can’t do this alone. We need equally passionate
-                partners and sponsors who can see how much good we can achieve
-                in these communities together.
-                <br />
-                <br />
-                Through partnerships with local government agencies and
-                corporate donors, AAS is building a sense of ownership and
-                investment in our program, which includes our own swimming pool
-                for our local community. Our children are our greatest
-                advocates. They share their experiences with their communities.
-                The joy of our children is infectious and the fact that we are
-                teaching underprivileged children the life skill of swimming is
-                inspiring.
-                <br />
-                <br />
-                Sponsorship investments help us to:
-              </p>
-              <ul className="list-disc list-outside ml-10">
-                <li className="text-left">
-                  outline the necessary steps and stages to ensure the
-                  successful implementation of our project plan
-                </li>
-                <li className="text-left">monitor the program</li>
-                <li className="text-left">
-                  achieve our goals of promoting wellbeing while empowering
-                  children with an essential life skill
-                </li>
-              </ul>
+          <div className="grid gap-10 tablet:grid-cols-2 desktopSmall:grid-cols-1">
+            <div className="grid gap-10">
+              <div>
+                <p>
+                  We have all the love, passion, skills, and experience in the
+                  world – but we can’t do this alone. We need equally passionate
+                  partners and sponsors who can see how much good we can achieve
+                  in these communities together.
+                  <br />
+                  <br />
+                  Through partnerships with local government agencies and
+                  corporate donors, AAS is building a sense of ownership and
+                  investment in our program, which includes our own swimming
+                  pool for our local community. Our children are our greatest
+                  advocates. They share their experiences with their
+                  communities. The joy of our children is infectious and the
+                  fact that we are teaching underprivileged children the life
+                  skill of swimming is inspiring.
+                  <br />
+                  <br />
+                  Sponsorship investments help us to:
+                </p>
+                <ul className="list-disc list-outside ml-10">
+                  <li className="text-left">
+                    outline the necessary steps and stages to ensure the
+                    successful implementation of our project plan
+                  </li>
+                  <li className="text-left">monitor the program</li>
+                  <li className="text-left">
+                    achieve our goals of promoting wellbeing while empowering
+                    children with an essential life skill
+                  </li>
+                </ul>
+              </div>
+              <Button
+                secondaryColor="lightBlue"
+                arrowColor="black"
+                cssClasses="desktopSmall:place-self-start hover:desktopSmall:-mx-2"
+              >
+                Become a Sponsor
+              </Button>
             </div>
-            <Button
-              secondaryColor="lightBlue"
-              arrowColor="black"
-              cssClasses="desktopSmall:mr-auto"
-            >
-              Become a Sponsor
-            </Button>
             <ImageComponent
               file="IMG-20231119-WA0007.jpg"
               folder="images"
               phoneWidth={425}
               tabletWidth={800}
-              desktopWidth={10}
+              desktopWidth={800}
               cssClasses=" aspect-video h-full w-full object-cover desktopSmall:hidden"
             />
           </div>

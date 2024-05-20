@@ -14,7 +14,7 @@ interface Props {
 
 const ContactForm = ({ blueBackground }: Props) => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(true);
+  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
 
   useEffect(() => {
@@ -145,7 +145,11 @@ const ContactForm = ({ blueBackground }: Props) => {
               typeSubmit
               backgroundColor="orange"
               arrowColor="white"
-              cssClasses=" desktopSmall:self-start"
+              cssClasses={classNames(" desktopSmall:self-start", {
+                "opacity-50 desktopSmall:cursor-not-allowed desktopSmall:hover:px-9 desktopSmall:hover:mx-0":
+                  !validateRecaptcha,
+                "hover:desktopSmall:opacity-90": validateRecaptcha,
+              })}
               normalButton
             >
               Submit
@@ -156,7 +160,7 @@ const ContactForm = ({ blueBackground }: Props) => {
               secondaryColor="lightBlue"
               arrowColor="black"
               cssClasses={classNames(" desktopSmall:self-start", {
-                "opacity-50 desktopSmall:cursor-not-allowed":
+                "opacity-50 desktopSmall:cursor-not-allowed desktopSmall:hover:px-9 desktopSmall:hover:mx-0":
                   !validateRecaptcha,
                 "hover:desktopSmall:opacity-90": validateRecaptcha,
               })}

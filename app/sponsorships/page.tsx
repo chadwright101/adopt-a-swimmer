@@ -1,6 +1,6 @@
-import HeroSection from "../_components/sponsorships-page/hero-section";
-import SponsorshipsSection1 from "../_components/sponsorships-page/sponsorships-section-1";
-import SponsorshipsSection2 from "../_components/sponsorships-page/sponsorships-section-2";
+import HeroSection from "../_components/pages/sponsorships-page/hero-section";
+import SponsorshipsSection1 from "../_components/pages/sponsorships-page/sponsorships-section-1";
+import SponsorshipsSection2 from "../_components/pages/sponsorships-page/sponsorships-section-2";
 
 const Sponsorships = () => {
   return (
