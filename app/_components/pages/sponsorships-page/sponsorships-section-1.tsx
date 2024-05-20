@@ -7,7 +7,7 @@ const SponsorshipsSection1 = () => {
       <div className="pt-15 pb-10 desktopSmall:pb-5 max-w-[1100px] desktopSmall:mx-auto">
         <div className="grid desktopSmall:grid-cols-2 gap-10">
           <div className="flex flex-col gap-10 row-span-2">
-            <h2>Sponsorships</h2>
+            <h2 className="text-heading">Sponsorships</h2>
             <p>
               Every Adopt a Swimmer (AAS) program aims to teach swimming lessons
               and water safety to 36 children at risk and 14 shark spotters in

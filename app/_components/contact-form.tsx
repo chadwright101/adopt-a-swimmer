@@ -62,7 +62,8 @@ const ContactForm = ({ blueBackground }: Props) => {
       ) : (
         <form
           className={classNames("flex flex-col gap-10", {
-            "bg-blue py-10 px-5 rounded-2xl": blueBackground,
+            "bg-blue -mx-5 py-10 px-5 tablet:mx-0 tablet:rounded-2xl":
+              blueBackground,
           })}
           action={async (formData) => {
             await sendEmail(formData);
@@ -146,7 +147,7 @@ const ContactForm = ({ blueBackground }: Props) => {
               backgroundColor="orange"
               arrowColor="white"
               cssClasses={classNames(" desktopSmall:self-start", {
-                "opacity-50 desktopSmall:cursor-not-allowed desktopSmall:hover:px-9 desktopSmall:hover:mx-0":
+                "opacity-75 desktopSmall:cursor-not-allowed desktopSmall:hover:px-9 desktopSmall:hover:mx-0":
                   !validateRecaptcha,
                 "hover:desktopSmall:opacity-90": validateRecaptcha,
               })}

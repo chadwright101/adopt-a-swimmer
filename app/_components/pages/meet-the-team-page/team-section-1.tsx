@@ -4,9 +4,9 @@ const TeamSection1 = () => {
   return (
     <main className="max-w-[1440px] mx-auto px-5 tablet:px-10 desktop:px-0">
       <div className="pt-15 pb-10 desktopSmall:pb-5 max-w-[1100px] desktopSmall:mx-auto">
-        <div className="grid gap-10 tablet:grid-cols-[1fr_2fr]">
+        <div className="grid gap-10 tablet:grid-cols-[1.5fr_2fr]">
           <div>
-            <h2 className="mb-10">Meet the team</h2>
+            <h2 className="mb-10 text-heading">Meet the team</h2>
             <p>
               Adopt a Swimmer has two qualified coaches and eight volunteers, as
               well as additional supports who work together to make the
