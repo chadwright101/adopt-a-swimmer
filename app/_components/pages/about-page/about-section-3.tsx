@@ -128,7 +128,7 @@ const AboutSection3 = () => {
           </div>
         </div>
         <hr className="my-10 text-black/25" />
-        <article>
+        <article id="documentation">
           <h4 className="mb-10">Documentation</h4>
           <ul className=" list-disc list-outside ml-10 grid gap-5 desktopSmall:gap-2">
             <li>
