@@ -63,7 +63,7 @@ const MenuToggle = () => {
           }
         )}
       >
-        <ul className="flex flex-col gap-14 px-8 py-20">
+        <ul className="flex flex-col gap-9 px-8 py-20">
           {data.map(({ title, url }, index) => (
             <li
               key={index}
@@ -74,7 +74,7 @@ const MenuToggle = () => {
               })}
             >
               <Link
-                className={classNames("text-subheading text-white font-thin", {
+                className={classNames("text-[28px] text-white font-thin", {
                   "border-b-[3px] border-orange pb-[6px] -mb-[6px]":
                     currentRoute === url,
                 })}

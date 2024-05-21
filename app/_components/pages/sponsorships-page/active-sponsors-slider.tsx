@@ -35,9 +35,9 @@ const ActiveSponsorsSlider = () => {
         },
       }}
       loop={true}
-      speed={4000}
+      speed={3000}
       autoplay={{
-        delay: 0,
+        delay: 2000,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -66,6 +66,22 @@ const ActiveSponsorsSlider = () => {
             </SwiperSlide>
           </li>
         ))}
+        <li>
+          <SwiperSlide className="my-auto pb-15">
+            <p className="aspect-square w-[160px] flex flex-col justify-center font-caveat text-[28px] text-center bg-white border-2 border-orange rounded-2xl">
+              Kate & Alex Fortune
+              <span className="font-caveat text-[20px]">(Ireland)</span>
+            </p>
+          </SwiperSlide>
+        </li>
+        <li>
+          <SwiperSlide className="my-auto pb-15">
+            <p className="aspect-square w-[160px] flex flex-col justify-center font-caveat text-[28px] text-center bg-white border-2 border-lightBlue rounded-2xl">
+              Susan Davies
+              <span className="font-caveat text-[20px]">(Ireland)</span>
+            </p>
+          </SwiperSlide>
+        </li>
       </ul>
     </Swiper>
   );

@@ -48,15 +48,12 @@ const CardSection = () => {
               volunteers, and sponsors.
             </p>
           </div>
-          <Button
-            secondaryColor="orange"
-            arrowColor="blue"
-            cssClasses="w-full text-[15px] desktopSmall:hover:px-1 desktopSmall:hover:mx-0"
-            noArrow
-            url="/sponsorships"
+          <Link
+            className="py-2 bg-white text-center border-4 rounded uppercase ease-in-out duration-300 border-orange w-full text-[15px] desktopSmall:hover:bg-white/90"
+            href="/sponsorships"
           >
             Become a sponsor
-          </Button>
+          </Link>
         </li>
 
         <li className="bg-orange max-w-[280px] min-h-[400px] px-5 py-8 rounded-2xl border-[12px] border-white flex flex-col justify-between relative">

@@ -16,15 +16,21 @@ const Contact = () => {
 
   const [showPhone, setShowPhone] = useState("Show phone number");
   const [showEmail, setShowEmail] = useState("Show email address");
+  const [showSpinnerPhone, setShowSpinnerPhone] = useState(false);
+  const [showSpinnerEmail, setShowSpinnerEmail] = useState(false);
 
   const handleShowPhoneNumber = async () => {
+    setShowSpinnerPhone(true);
     const phoneNumber = await showPhoneNumber();
     setShowPhone(phoneNumber);
+    setShowSpinnerPhone(false);
   };
 
   const handleShowEmailAddress = async () => {
+    setShowSpinnerEmail(true);
     const emailAddress = await showEmailAddress();
     setShowEmail(emailAddress);
+    setShowSpinnerEmail(false);
   };
 
   return (
@@ -41,7 +47,11 @@ const Contact = () => {
                   onClick={handleShowEmailAddress}
                   aria-label="Show email address"
                 >
-                  {showEmail}
+                  {showSpinnerEmail ? (
+                    <div className="small-spinner"></div>
+                  ) : (
+                    showEmail
+                  )}
                 </button>
               ) : (
                 <Link
@@ -60,7 +70,11 @@ const Contact = () => {
                   onClick={handleShowPhoneNumber}
                   aria-label="Show phone number"
                 >
-                  {showPhone}
+                  {showSpinnerPhone ? (
+                    <div className="small-spinner"></div>
+                  ) : (
+                    showPhone
+                  )}
                 </button>
               ) : (
                 <Link

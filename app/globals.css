@@ -53,11 +53,34 @@
     left: 0;
     border: 3px solid transparent;
     border-top-color: #F68428;
-    /* Change the color here */
     animation: spin 1s linear infinite;
   }
 
   .spinner::after {
+    animation-delay: 0.5s;
+  }
+
+  .small-spinner {
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+
+  .small-spinner::before,
+  .small-spinner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid transparent;
+    border-top-color: #F68428;
+    animation: spin 1s linear infinite;
+  }
+
+  .small-spinner::after {
     animation-delay: 0.5s;
   }
 

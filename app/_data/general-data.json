@@ -9,6 +9,7 @@
       "/hero-slides/DSC_0130.jpg",
       "/hero-slides/DSC_0132.jpg",
       "/hero-slides/DSC_0136.jpg",
+      "/hero-slides/M55A6517.jpg",
       "/hero-slides/DSC_1456.jpg",
       "/hero-slides/DSC_1460.jpg",
       "/hero-slides/DSC_1476.jpg",
@@ -93,9 +94,14 @@
         "link": "https://thewrightdesigns.co.za/"
       },
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/tsogo-sun.jpg",
-        "alt": "Tsogo Sun logo",
-        "link": "https://www.tsogosun.com/"
+        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/mungo-move-logo.jpg",
+        "alt": "Mungo Move logo",
+        "link": "https://www.mungo.co.za/about-us/move/"
+      },
+      {
+        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/bitou-municipality-logo.jpg",
+        "alt": "Bitou Municipality logo",
+        "link": "https://www.bitou.gov.za/"
       }
     ]
   },

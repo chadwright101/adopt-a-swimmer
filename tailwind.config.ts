@@ -39,7 +39,7 @@ const config: Config = {
         },
       ],
       subheading: [
-        "1.75rem",
+        "2rem",
         {
           lineHeight: "110%",
           letterSpacing: "0.0525rem",

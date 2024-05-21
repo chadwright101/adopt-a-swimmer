@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Button from "../../button";
 import ImageComponent from "../../image-component";
 
@@ -10,7 +12,10 @@ const TeamSection2 = () => {
           <div className="grid gap-8 place-content-between">
             <div className="grid gap-8">
               <div>
-                <h5 className="text-[18px] font-semiBold font-roboto mb-1 tracking-wider">
+                <h4 className="text-[20px] font-roboto font-bold uppercase mb-5">
+                  Media & marketing
+                </h4>
+                <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
                   Roxanne Churchyard
                 </h5>
                 <h6 className="text-paragraph font-thin font-roboto tracking-wide italic">
@@ -50,7 +55,10 @@ const TeamSection2 = () => {
           </div>
           <div className="grid gap-8">
             <div>
-              <h5 className="text-[18px] font-semiBold font-roboto mb-1 tracking-wider">
+              <h4 className="text-[20px] font-roboto font-bold uppercase mb-5">
+                Web design & development
+              </h4>
+              <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
                 Chad Wright
               </h5>
               <h6 className="text-paragraph font-thin font-roboto tracking-wide italic">
@@ -68,7 +76,7 @@ const TeamSection2 = () => {
               />
               The Wright Designs is proud to support Adopt a Swimmer&apos;s
               mission by crafting a custom website to elevate their online
-              presence.  This bespoke solution, designed and developed entirely
+              presence. This bespoke solution, designed and developed entirely
               by our team, will serve as a powerful tool to spread awareness
               about their cause and attract potential sponsors. By creating a
               visually appealing and user-friendly website, we hope to empower
@@ -89,7 +97,10 @@ const TeamSection2 = () => {
           </div>
           <div className="grid gap-8 place-content-start tablet:col-span-2 desktopSmall:col-span-1">
             <div>
-              <h5 className="text-[18px] font-semiBold font-roboto mb-1 tracking-wider">
+              <h4 className="text-[20px] font-roboto font-bold uppercase mb-5">
+                Copy editor
+              </h4>
+              <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
                 Nadine von Moltke
               </h5>
               <h6 className="text-paragraph font-thin font-roboto tracking-wide italic">
@@ -105,6 +116,60 @@ const TeamSection2 = () => {
               purpose has been an honour.
             </p>
           </div>
+          <div className="grid gap-[60px] tablet:grid-cols-2 tablet:col-span-2 desktopSmall:grid-cols-3 desktopSmall:col-span-3">
+            <div>
+              <h4 className="text-[20px] font-roboto font-bold uppercase mb-5">
+                Photography
+              </h4>
+              <div className="grid gap-5">
+                <div>
+                  <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
+                    Julia Evan
+                  </h5>
+                  <h6 className="text-paragraph font-thin font-roboto tracking-wide italic">
+                    <Link
+                      href="https://www.dailymaverick.co.za/"
+                      target="_blank"
+                      className="font-thin text-link desktopSmall:hover:text-orange ease-in-out duration-150"
+                    >
+                      Daily Maverick
+                    </Link>
+                  </h6>
+                </div>
+                <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
+                  Matt Leppan
+                </h5>
+                <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
+                  <Link
+                    href="https://carvedmedia.com/"
+                    target="_blank"
+                    className="font-regular text-link desktopSmall:hover:text-orange ease-in-out duration-150"
+                  >
+                    Carved Media
+                  </Link>
+                </h5>
+                <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
+                  Gustav Schlechter
+                </h5>
+              </div>
+            </div>
+            <div>
+              <h4 className="text-[20px] font-roboto font-bold uppercase mb-5">
+                Videography
+              </h4>
+              <div className="grid gap-5 desktopSmall:flex justify-between">
+                <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
+                  <Link
+                    href="https://deliciousbokeh.com/"
+                    target="_blank"
+                    className="font-regular text-link desktopSmall:hover:text-orange ease-in-out duration-150"
+                  >
+                    Delicious Bokeh
+                  </Link>
+                </h5>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <hr className="text-black/25" />
@@ -112,42 +177,42 @@ const TeamSection2 = () => {
         <h4 className="mb-15">Volunteers</h4>
         <div className="grid gap-10 tablet:grid-cols-2 desktopSmall:grid-cols-3">
           <div>
-            <h6 className="font-roboto font-semiBold text-[18px] mb-4">
-              Lize van Rooyen
+            <h6 className="font-roboto font-regular text-paragraph mb-4">
+              Lize van Rooyen
             </h6>
             <p>
-              The patience, care and never-ending belief of Louise in each of
+              The patience, care and never-ending belief of Louise in each of
               the pupils is something I strive towards. Her ability to
               understand the needs and skill level of each individual, teach
-              them how to swim, and foster a love for water is remarkable. There
+              them how to swim, and foster a love for water is remarkable. There
               have been many moments of joy in the pool. One that I will cherish
-              forever was when a new pupil who had never been in a pool before
-              climbed into the water fearful and uncertain. Once a noodle was
-              fastened around his waist and he realized he was able to float, he
-              burst out laughing in disbelief; a laughter of pure enjoyment from
+              forever was when a new pupil who had never been in a pool before
+              climbed into the water fearful and uncertain. Once a noodle was
+              fastened around his waist and he realized he was able to float, he
+              burst out laughing in disbelief; a laughter of pure enjoyment from
               deep within. His fear faded, and this youngster has made immense
-              progress with swimming. It is a genuine privilege to work
+              progress with swimming. It is a genuine privilege to work
               alongside Louise, the legacy of AAS is great and has changed many
-              lives. 
+              lives.
             </p>
           </div>
           <div>
-            <h6 className="font-roboto font-semiBold text-[18px] mb-4">
+            <h6 className="font-roboto font-regular text-paragraph mb-4">
               Grace Ash
             </h6>
             <p>
-              It’s been nothing short of fulfilling to dedicate my available
+              It’s been nothing short of fulfilling to dedicate my available
               time to such a meaningful cause. As someone who’s always had a
               strong connection to the water, sharing my love for it with the
-              brave and passionate kids in the program has been an absolute
-              joy. AAS is truly one of a kind, and I feel incredibly blessed to
-              be part of it. From witnessing their first strokes to seeing their
+              brave and passionate kids in the program has been an absolute joy.
+              AAS is truly one of a kind, and I feel incredibly blessed to be
+              part of it. From witnessing their first strokes to seeing their
               confidence soar, every moment spent with these amazing kids
               reinforces the value of this experience.
             </p>
           </div>
           <div>
-            <h6 className="font-roboto font-semiBold text-[18px] mb-4">
+            <h6 className="font-roboto font-regular text-paragraph mb-4">
               Arianne Bauer
             </h6>
             <p>
@@ -159,6 +224,28 @@ const TeamSection2 = () => {
               in the water.
             </p>
           </div>
+        </div>
+      </article>
+      <hr className="text-black/25" />
+      <article className="py-15 max-w-[1100px] desktopSmall:mx-auto">
+        <h4 className="mb-15">Memory wall</h4>
+        <div className="grid tablet:gap-10 tablet:grid-cols-2 pb-15">
+          <figure className="aspect-[3/2]">
+            <ImageComponent
+              file="20170513_135156.jpg"
+              folder="images"
+              phoneWidth={425}
+              tabletWidth={425}
+              desktopWidth={530}
+              cssClasses="h-full w-full aspect-video object-top object-cover"
+            />
+            <figcaption className="text-center mt-4 font-thin italic px-8">
+              In loving memory of{" "}
+              <span className="font-regular">Peter Auersperg</span> (middle
+              right) who was an original founder of the AAS Program, and{" "}
+              <span className="font-regular">Keegan</span> (far right) who
+            </figcaption>
+          </figure>
         </div>
       </article>
     </div>

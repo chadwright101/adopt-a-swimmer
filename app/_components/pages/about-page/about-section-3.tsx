@@ -10,10 +10,10 @@ const AboutSection3 = () => {
         <div className="grid gap-10 tablet:grid-cols-2">
           <h3 className="tablet:col-span-2">How AAS programs work</h3>
           <p className="tablet:col-span-2 desktopSmall:col-auto">
-            AAS has one qualified instructor and three volunteers currently
-            running programs. We have secured the use of the pool at the Health
-            and Fitness Centre in Piesang Valley and a private heated outdoor
-            pool for winter months.
+            AAS has two qualified instructors and 8 volunteers (six of which are
+            junior lifesavers and one senior lifesaver). We have secured the use
+            of the pool at the Health and Fitness Centre in Piesang Valley and a
+            private heated outdoor pool for winter months.
             <br />
             <br />
             Swim caps are donated by Ocean Safaris, and towels and swimming

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import data from "@/app/_data/navigation.json";
 import MenuToggle from "./mobile/menu-toggle";
@@ -12,6 +13,16 @@ interface Props {
 
 const Header = ({ isScrolled }: Props) => {
   const currentRoute = usePathname();
+
+  const [deviceType, setDeviceType] = useState("Unknown");
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+      setDeviceType("iOS");
+    }
+  }, []);
 
   return (
     <header
@@ -83,7 +94,9 @@ const Header = ({ isScrolled }: Props) => {
               "font-roboto uppercase font-bold text-white absolute desktopSmall:ease-in-out desktopSmall:duration-500",
               {
                 "text-[2.25px] bottom-[40px] left-[53.5px]": isScrolled,
-                "text-[7.65px] bottom-[1px] left-[29.5px]": !isScrolled,
+                "text-[7.65px] left-[29.5px]": !isScrolled,
+                "bottom-[2px]": !isScrolled && deviceType === "iOS",
+                "bottom-[1px]": !isScrolled && deviceType !== "iOS",
               }
             )}
           >
