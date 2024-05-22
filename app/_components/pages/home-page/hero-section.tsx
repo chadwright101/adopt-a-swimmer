@@ -12,7 +12,7 @@ const HeroSection = ({ cssClasses }: Props) => {
       poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/video-poster-desktop.webp"
       className={cssClasses}
     >
-      {/* <source
+      <source
         src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/video/phone.mp4"
         type="video/mp4"
         media="(max-width: 424px)"
@@ -41,7 +41,7 @@ const HeroSection = ({ cssClasses }: Props) => {
         src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/video/desktop.webm"
         type="video/webm"
         media="(min-width: 801px)"
-      /> */}
+      />
       Your browser does not support the video tag.
     </video>
   );

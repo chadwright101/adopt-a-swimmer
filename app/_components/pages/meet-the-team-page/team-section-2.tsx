@@ -122,31 +122,33 @@ const TeamSection2 = () => {
                 Photography
               </h4>
               <div className="grid gap-5">
-                <div>
-                  <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
-                    Julia Evan
-                  </h5>
-                  <h6 className="text-paragraph font-thin font-roboto tracking-wide italic">
+                <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
+                  Julia Evan{" "}
+                  <span className="font-thin">
+                    (
                     <Link
                       href="https://www.dailymaverick.co.za/"
                       target="_blank"
                       className="font-thin text-link desktopSmall:hover:text-orange ease-in-out duration-150"
+                      aria-label="Daily Maverick"
                     >
                       Daily Maverick
                     </Link>
-                  </h6>
-                </div>
-                <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
-                  Matt Leppan
+                    )
+                  </span>
                 </h5>
                 <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
                   <Link
                     href="https://carvedmedia.com/"
                     target="_blank"
                     className="font-regular text-link desktopSmall:hover:text-orange ease-in-out duration-150"
+                    aria-label="Carved Media"
                   >
                     Carved Media
                   </Link>
+                </h5>
+                <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
+                  Matt Leppan
                 </h5>
                 <h5 className="text-paragraph font-regular font-roboto mb-1 tracking-wider">
                   Gustav Schlechter
@@ -163,6 +165,7 @@ const TeamSection2 = () => {
                     href="https://deliciousbokeh.com/"
                     target="_blank"
                     className="font-regular text-link desktopSmall:hover:text-orange ease-in-out duration-150"
+                    aria-label="Delicious Bokeh"
                   >
                     Delicious Bokeh
                   </Link>
@@ -230,7 +233,7 @@ const TeamSection2 = () => {
       <article className="py-15 max-w-[1100px] desktopSmall:mx-auto">
         <h4 className="mb-15">Memory wall</h4>
         <div className="grid tablet:gap-10 tablet:grid-cols-2 pb-15">
-          <figure className="aspect-[3/2]">
+          <figure>
             <ImageComponent
               file="20170513_135156.jpg"
               folder="images"
@@ -239,11 +242,12 @@ const TeamSection2 = () => {
               desktopWidth={530}
               cssClasses="h-full w-full aspect-video object-top object-cover"
             />
-            <figcaption className="text-center mt-4 font-thin italic px-8">
+            <figcaption className="text-center mt-4 font-thin italic">
               In loving memory of{" "}
               <span className="font-regular">Peter Auersperg</span> (middle
               right) who was an original founder of the AAS Program, and{" "}
-              <span className="font-regular">Keegan</span> (far right) who
+              <span className="font-regular">Keegan Till</span> (far right) who
+              was part of our swimming program.
             </figcaption>
           </figure>
         </div>

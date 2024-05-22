@@ -25,6 +25,7 @@ const ScrollUpButton = () => {
           "bottom-10": scrollPosition > 750 && !isNearBottom,
         }
       )}
+      aria-label="Scroll to top of page"
     >
       <svg
         width="36"

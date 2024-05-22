@@ -10,15 +10,17 @@ const HeroSection = () => {
           phoneWidth={10}
           tabletWidth={10}
           desktopWidth={340}
+          priority
           cssClasses="rounded-none h-[470px] tablet:h-[400px] desktopSmall:h-[667px] w-full object-cover tablet:rounded-bl-2xl desktopSmall:rounded-none"
         />
       </div>
       <ImageComponent
         file="20220703_134106.jpg"
         folder="images"
-        phoneWidth={425}
+        phoneWidth={550}
         tabletWidth={800}
         desktopWidth={910}
+        priority
         cssClasses="rounded-none h-[470px] tablet:h-[400px] desktopSmall:h-[667px] w-full object-cover"
       />
       <div className="bg-blue/90 w-full py-10 px-5 tablet:grid place-items-center tablet:h-full tablet:relative tablet:rounded-br-2xl desktopSmall:rounded-none">

@@ -10,6 +10,7 @@ const HeroSection = () => {
           phoneWidth={10}
           tabletWidth={10}
           desktopWidth={320}
+          priority
           cssClasses="hidden rounded-none h-[716px] tablet:h-[470px] min-[950px]:h-[550px] desktopSmall:h-[470px] tablet:block w-full object-cover tablet:rounded-bl-2xl desktopSmall:rounded-none"
         />
       </div>
@@ -20,6 +21,7 @@ const HeroSection = () => {
           phoneWidth={10}
           tabletWidth={10}
           desktopWidth={320}
+          priority
           cssClasses="rounded-none h-[470px] w-full object-cover"
         />
       </div>
@@ -29,6 +31,7 @@ const HeroSection = () => {
         phoneWidth={10}
         tabletWidth={10}
         desktopWidth={320}
+        priority
         cssClasses="hidden rounded-none tablet:block h-[716px] tablet:h-[470px] min-[950px]:h-[550px] desktopSmall:h-[470px] w-full object-cover"
       />
       <div className="bg-beige/90 drop-shadow-default w-full py-10 px-5 absolute bottom-0 desktopSmall:bottom-0 tablet:grid place-items-center tablet:h-full tablet:relative tablet:rounded-br-2xl desktopSmall:rounded-none">

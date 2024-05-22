@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ImageComponent from "../../image-component";
 import Button from "../../button";
 import Link from "next/link";
@@ -87,6 +86,7 @@ const AboutSection3 = () => {
                 secondaryColor="lightBlue"
                 arrowColor="black"
                 cssClasses="desktopSmall:place-self-start hover:desktopSmall:-mx-2"
+                url="/sponsorships"
               >
                 Become a Sponsor
               </Button>
@@ -136,6 +136,7 @@ const AboutSection3 = () => {
                 href="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/documents/Adopt+a+swimmer+ngo+-+npo.jpg"
                 target="_blank"
                 className="font-thin text-link hover:desktopSmall:text-orange ease-in-out duration-150"
+                aria-label="Certificate of Registration NPO"
               >
                 Certificate of Registration NPO
               </Link>
@@ -145,6 +146,7 @@ const AboutSection3 = () => {
                 href="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/documents/sasfin+3rd+term+report+no+6.pdf"
                 target="_blank"
                 className="font-thin text-link hover:desktopSmall:text-orange ease-in-out duration-150"
+                aria-label="Sasfin 3rd term report on AAS"
               >
                 Sasfin 3rd term report on AAS
               </Link>

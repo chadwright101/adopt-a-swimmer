@@ -35,10 +35,7 @@ const Header = ({ isScrolled }: Props) => {
       )}
     >
       <div className="px-5 h-full flex justify-between items-start desktopSmall:items-end desktopSmall:max-w-[1100px] desktopSmall:mx-auto">
-        <Link
-          href="/"
-          className="desktopSmall:self-start hover:desktopSmall:opacity-90 ease-in-out duration-200 z-10 relative"
-        >
+        <div className="desktopSmall:self-start z-10 relative">
           <Image
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/adopt-a-swimmer-logo-header.png"
             priority
@@ -102,7 +99,7 @@ const Header = ({ isScrolled }: Props) => {
           >
             Plettenberg Bay
           </h2>
-        </Link>
+        </div>
         <MenuToggle />
         <nav className="hidden desktopSmall:block translate-y-3">
           <ul className="flex gap-5">
@@ -116,6 +113,7 @@ const Header = ({ isScrolled }: Props) => {
                     }
                   )}
                   href={url}
+                  aria-label={title}
                 >
                   {title}
                 </Link>

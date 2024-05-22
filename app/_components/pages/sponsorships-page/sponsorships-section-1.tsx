@@ -39,6 +39,7 @@ const SponsorshipsSection1 = () => {
                 backgroundColor="orange"
                 arrowColor="white"
                 cssClasses="mt-10 desktopSmall:place-self-start"
+                url="/contact"
               >
                 Become a sponsor
               </Button>

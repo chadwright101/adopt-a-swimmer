@@ -35,9 +35,9 @@ const ActiveSponsorsSlider = () => {
         },
       }}
       loop={true}
-      speed={3000}
+      speed={1000}
       autoplay={{
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -54,6 +54,7 @@ const ActiveSponsorsSlider = () => {
                 href={link}
                 target="_blank"
                 className="hover:desktopSmall:opacity-90 ease-in-out duration-150"
+                aria-label="Sponsor link"
               >
                 <Image
                   src={imgUrl}

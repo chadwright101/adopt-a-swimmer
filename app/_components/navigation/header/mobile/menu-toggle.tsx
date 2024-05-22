@@ -80,6 +80,7 @@ const MenuToggle = () => {
                 })}
                 href={url}
                 onClick={() => setShowMenu(false)}
+                aria-label={title}
               >
                 {title}
               </Link>

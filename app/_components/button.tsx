@@ -78,6 +78,7 @@ const Button = ({
             "text black": secondaryColor,
           }
         )}
+        aria-label={children as string}
       >
         {children}
         {!noArrow && (
@@ -145,6 +146,7 @@ const Button = ({
         type={typeSubmit ? "submit" : "button"}
         onClick={onClick}
         disabled={disabled}
+        aria-label={children as string}
       >
         {pending ? (
           <div className="spinner"></div>

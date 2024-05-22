@@ -51,6 +51,7 @@ const CardSection = () => {
           <Link
             className="py-2 bg-white text-center border-4 rounded uppercase ease-in-out duration-300 border-orange w-full text-[15px] desktopSmall:hover:bg-white/90"
             href="/sponsorships"
+            aria-label="Become a sponsor"
           >
             Become a sponsor
           </Link>

@@ -27,6 +27,7 @@ const Footer = () => {
               <Link
                 href={url}
                 className="desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
+                aria-label={title}
               >
                 {title}
               </Link>
@@ -48,6 +49,7 @@ const Footer = () => {
                 href="https://thewrightdesigns.co.za"
                 target="_blank"
                 className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
+                aria-label="The Wright Designs website"
               >
                 The Wright Designs
               </Link>
@@ -58,6 +60,7 @@ const Footer = () => {
               <Link
                 href="https://adoptaswimmer.co.za"
                 className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
+                aria-label="Adopt A Swimmer website"
               >
                 www.adoptaswimmer.co.za
               </Link>
@@ -69,6 +72,7 @@ const Footer = () => {
           <Link
             href="https://adoptaswimmer.co.za"
             className="p-2 -m-2 text-link desktopSmall:hover:text-orange ease-in-out duration-200 font-thin"
+            aria-label="Adopt A Swimmer website"
           >
             www.adoptaswimmer.co.za
           </Link>

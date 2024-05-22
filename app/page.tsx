@@ -9,11 +9,6 @@ import Image from "next/image";
 import TestimonialsSection from "./_components/pages/home-page/testimonials-section";
 import ContactSection from "./_components/pages/home-page/contact-section";
 
-export const metadata = {
-  title: "Adopt A Swimmer",
-  description: "Coming soon...",
-};
-
 export default function Home() {
   const {
     homePage: { imageSlides },
