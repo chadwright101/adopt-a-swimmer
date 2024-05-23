@@ -175,7 +175,7 @@ const TeamSection2 = () => {
           </div>
         </div>
       </section>
-      <hr className="text-black/25" />
+      <hr className="text-black/25 max-w-[1100px] desktopSmall:mx-auto" />
       <article className="py-15 max-w-[1100px] desktopSmall:mx-auto">
         <h4 className="mb-15">Volunteers</h4>
         <div className="grid gap-10 tablet:grid-cols-2 desktopSmall:grid-cols-3">
@@ -229,8 +229,8 @@ const TeamSection2 = () => {
           </div>
         </div>
       </article>
-      <hr className="text-black/25" />
-      <article className="py-15 max-w-[1100px] desktopSmall:mx-auto">
+      <hr className="text-black/25 max-w-[1100px] desktopSmall:mx-auto" />
+      <article className="py-15 mb-15 max-w-[1100px] desktopSmall:mx-auto desktopSmall:mb-5">
         <h4 className="mb-15">Memory wall</h4>
         <div className="grid tablet:gap-10 tablet:grid-cols-2 pb-15">
           <figure>

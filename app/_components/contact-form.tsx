@@ -90,6 +90,7 @@ const ContactForm = ({ blueBackground }: Props) => {
               })}
               placeholder="Email address goes here..."
               autoComplete="email"
+              required
             />
           </label>
 
@@ -115,6 +116,7 @@ const ContactForm = ({ blueBackground }: Props) => {
               )}
               placeholder="Name goes here..."
               autoComplete="name"
+              required
             />
           </label>
 
@@ -139,6 +141,7 @@ const ContactForm = ({ blueBackground }: Props) => {
               )}
               rows={5}
               placeholder="Message goes here..."
+              required
             ></textarea>
           </label>
           {blueBackground ? (

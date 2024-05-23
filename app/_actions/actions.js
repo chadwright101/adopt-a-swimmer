@@ -40,6 +40,9 @@ export async function sendEmail(formData) {
           user: process.env.SMTP_USER,
           pass: process.env.SMTP_PASS,
         },
+        tls: {
+          rejectUnauthorized: false,
+        },
       });
       const mailOptions = {
         from: process.env.SMTP_USER,

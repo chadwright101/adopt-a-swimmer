@@ -149,7 +149,12 @@ const Button = ({
         aria-label={children as string}
       >
         {pending ? (
-          <div className="spinner"></div>
+          <div
+            className={classNames("", {
+              "spinner-orange": secondaryColor,
+              "spinner-white": backgroundColor,
+            })}
+          ></div>
         ) : (
           <>
             {children}
