@@ -8,7 +8,7 @@ const ContactSection = () => {
       <div className="desktopSmall:grid grid-cols-2 gap-10">
         <ContactForm />
         <ImageComponent
-          file="/DSC_1501.jpg"
+          file="/DSC_0098.jpg"
           folder="images"
           phoneWidth={10}
           tabletWidth={10}
