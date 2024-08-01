@@ -9,7 +9,7 @@
 
 @layer components {
   * {
-    @apply font-roboto text-black
+    @apply font-roboto text-black dark:text-black dark:bg-white
   }
 
   h1 {

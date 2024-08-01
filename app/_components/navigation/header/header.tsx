@@ -27,7 +27,7 @@ const Header = ({ isScrolled }: Props) => {
   return (
     <header
       className={classNames(
-        "bg-white z-50 py-6 h-[96px] border-b-4 border-orange desktopSmall:sticky ease-in-out duration-500",
+        "bg-white dark:bg-white z-50 py-6 h-[96px] border-b-4 border-orange desktopSmall:sticky ease-in-out duration-500",
         {
           "desktopSmall:top-0": !isScrolled,
           "desktopSmall:-top-8": isScrolled,
