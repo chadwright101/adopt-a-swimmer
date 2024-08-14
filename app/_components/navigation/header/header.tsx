@@ -37,7 +37,7 @@ const Header = ({ isScrolled }: Props) => {
       <div className="px-5 h-full flex justify-between items-start desktopSmall:items-end desktopSmall:max-w-[1100px] desktopSmall:mx-auto">
         <div className="desktopSmall:self-start z-10 relative">
           <Image
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/adopt-a-swimmer-logo-header.png"
+            src="/assets/adopt-a-swimmer-logo-header.png"
             priority
             alt="Adopt a Swimmer Logo"
             className={classNames(

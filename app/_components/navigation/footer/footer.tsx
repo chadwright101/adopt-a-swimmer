@@ -36,7 +36,7 @@ const Footer = () => {
         </ul>
         <div className="grid place-items-center gap-7 -mt-10 phone:-mt-15 min-[600px]:-mt-20 min-[700px]:-mt-[100px] min-[800px]:-mt-[125px] min-[900px]:-mt-[140px] min-[1000px]:-mt-[155px] desktopSmall:mt-0 desktopSmall:place-items-end">
           <Image
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/adopt-a-swimmer-logo.png"
+            src="/assets/adopt-a-swimmer-logo.png"
             alt="Logo"
             width={125}
             height={85}

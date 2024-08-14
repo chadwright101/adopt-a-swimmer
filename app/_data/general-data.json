@@ -68,42 +68,42 @@
   "sponsorshipsPage": {
     "activeSponsors": [
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/carved-media.jpg",
+        "imgUrl": "/assets/images/collaborators/carved-media.jpg",
         "alt": "Carved Media logo",
         "link": "https://carvedmedia.com/"
       },
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/delicious-bokeh.jpg",
+        "imgUrl": "/assets/images/collaborators/delicious-bokeh.jpg",
         "alt": "Delicious Bokeh logo",
         "link": "https://deliciousbokeh.com/"
       },
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/sasfin-logo+1.jpg",
+        "imgUrl": "/assets/images/collaborators/sasfin-logo+1.jpg",
         "alt": "Sasfin Bank logo",
         "link": "https://sasfin.com/"
       },
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/the-fat-fish.jpg",
+        "imgUrl": "/assets/images/collaborators/the-fat-fish.jpg",
         "alt": "The Fat Fish logo",
         "link": "https://thefatfish.co.za/"
       },
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/the-wright-designs.jpg",
+        "imgUrl": "/assets/images/collaborators/the-wright-designs.jpg",
         "alt": "The Wright Designs logo",
         "link": "https://thewrightdesigns.co.za/"
       },
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/mungo-move-logo.jpg",
+        "imgUrl": "/assets/images/collaborators/mungo-move-logo.jpg",
         "alt": "Mungo Move logo",
         "link": "https://www.mungo.co.za/about-us/move/"
       },
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/bitou-municipality-logo.jpg",
+        "imgUrl": "/assets/images/collaborators/bitou-municipality-logo.jpg",
         "alt": "Bitou Municipality logo",
         "link": "https://www.bitou.gov.za/"
       },
       {
-        "imgUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/images/collaborators/ez-life-swimming-logo.jpg",
+        "imgUrl": "/assets/images/collaborators/ez-life-swimming-logo.jpg",
         "alt": "EZ Life logo",
         "link": "https://www.ezlifesports.com/"
       }
