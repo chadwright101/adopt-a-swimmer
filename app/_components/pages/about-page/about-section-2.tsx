@@ -114,7 +114,7 @@ const AboutSection2 = () => {
               </ul>
             </div>
             <ImageComponent
-              file="Frame%2057.jpg"
+              file="Frame-57.jpg"
               folder="images"
               phoneWidth={10}
               tabletWidth={10}

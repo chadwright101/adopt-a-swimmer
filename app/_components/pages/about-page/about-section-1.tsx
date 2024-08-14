@@ -41,7 +41,7 @@ const AboutSection1 = () => {
       <div className="py-15 grid gap-10 max-w-[1100px] desktopSmall:mx-auto desktop:grid-cols-[780px_1fr]">
         <div className="grid gap-10 tablet:grid-cols-2 desktop:hidden">
           <ImageComponent
-            file="Capture%208.jpg"
+            file="Capture-8.jpg"
             folder="images"
             phoneWidth={425}
             tabletWidth={800}

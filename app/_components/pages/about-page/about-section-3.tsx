@@ -133,7 +133,7 @@ const AboutSection3 = () => {
           <ul className=" list-disc list-outside ml-10 grid gap-5 desktopSmall:gap-2">
             <li>
               <Link
-                href="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/documents/Adopt+a+swimmer+ngo+-+npo.jpg"
+                href="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/documents/Adopt-a-swimmer-ngo-npo.jpg"
                 target="_blank"
                 className="font-thin text-link hover:desktopSmall:text-orange ease-in-out duration-150"
                 aria-label="Certificate of Registration NPO"
@@ -143,7 +143,7 @@ const AboutSection3 = () => {
             </li>
             <li>
               <Link
-                href="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/documents/sasfin+3rd+term+report+no+6.pdf"
+                href="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/adopt-a-swimmer/documents/sasfin-3rd-term-report-no-6.pdf"
                 target="_blank"
                 className="font-thin text-link hover:desktopSmall:text-orange ease-in-out duration-150"
                 aria-label="Sasfin 3rd term report on AAS"
