@@ -15,7 +15,7 @@ const MakeASplashSection = () => {
       <div className="desktopSmall:grid grid-cols-2 gap-10 max-w-[1100px] desktopSmall:mx-auto">
         <div className="bg-orange aspect-[1.1/1] min-[380px]:aspect-square z-10 w-full min-[600px]:h-[400px] tablet:h-[600px] tablet:p-8 rounded-tl-full rounded-bl-full p-5 ml-auto desktopSmall:p-0 desktopSmall:bg-none desktopSmall:rounded-none desktopSmall:order-2 desktopSmall:aspect-auto desktopSmall:h-full">
           <ImageComponent
-            file="/DSC_1507.jpg"
+            file="DSC_1507.jpg"
             phoneWidth={600}
             tabletWidth={800}
             desktopWidth={800}
