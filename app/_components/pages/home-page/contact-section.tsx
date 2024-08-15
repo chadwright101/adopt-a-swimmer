@@ -7,14 +7,16 @@ const ContactSection = () => {
       <h3 className="text-heading mb-10">Get in touch</h3>
       <div className="desktopSmall:grid grid-cols-2 gap-10">
         <ContactForm />
-        <ImageComponent
-          file="/DSC_0098.jpg"
-          folder="images"
-          phoneWidth={10}
-          tabletWidth={10}
-          desktopWidth={1100}
-          cssClasses="hidden desktopSmall:block h-full object-cover"
-        />
+        <div className="hidden desktopSmall:block">
+          <ImageComponent
+            file="DSC_0098.jpg"
+            folder="images"
+            phoneWidth={10}
+            tabletWidth={10}
+            desktopWidth={1100}
+            cssClasses="h-full w-full object-cover"
+          />
+        </div>
       </div>
     </section>
   );

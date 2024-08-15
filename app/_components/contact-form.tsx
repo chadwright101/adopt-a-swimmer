@@ -14,7 +14,6 @@ interface Props {
 
 const ContactForm = ({ blueBackground }: Props) => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [showMessage, setShowMessage] = useState(false);
   const [validateRecaptcha, setValidateRecaptcha] = useState(false);
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
 
@@ -120,88 +119,61 @@ const ContactForm = ({ blueBackground }: Props) => {
               required
             />
           </label>
-
-          {showMessage ? (
-            <>
-              <label
-                htmlFor="message"
-                className={classNames("grid gap-4 text-paragraph", {
-                  "text-white font-semibold": blueBackground,
-                  "font-thin": !blueBackground,
-                })}
-              >
-                Message:
-                <textarea
-                  id="message"
-                  name="message"
-                  className={classNames(
-                    "border border-black/50 rounded bg-white py-4 px-3 font-thin",
-                    {
-                      "bg-white/50 border-2 border-white placeholder:text-black/50 text-black":
-                        blueBackground,
-                      "border border-black/50 bg-white": !blueBackground,
-                    }
-                  )}
-                  rows={5}
-                  placeholder="Message goes here..."
-                  required
-                ></textarea>
-              </label>
-              {blueBackground ? (
-                <Button
-                  typeSubmit
-                  backgroundColor="orange"
-                  arrowColor="white"
-                  cssClasses={classNames(" desktopSmall:self-start", {
-                    "opacity-75 desktopSmall:cursor-not-allowed desktopSmall:hover:px-9 desktopSmall:hover:mx-0":
-                      !validateRecaptcha,
-                    "hover:desktopSmall:opacity-90": validateRecaptcha,
-                  })}
-                  normalButton
-                >
-                  Submit
-                </Button>
-              ) : (
-                <Button
-                  typeSubmit
-                  secondaryColor="lightBlue"
-                  arrowColor="black"
-                  cssClasses={classNames(" desktopSmall:self-start", {
-                    "opacity-50 desktopSmall:cursor-not-allowed desktopSmall:hover:px-9 desktopSmall:hover:mx-0":
-                      !validateRecaptcha,
-                    "hover:desktopSmall:opacity-90": validateRecaptcha,
-                  })}
-                  normalButton
-                  disabled={!validateRecaptcha}
-                >
-                  Submit
-                </Button>
+          <label
+            htmlFor="message"
+            className={classNames("grid gap-4 text-paragraph", {
+              "text-white font-semibold": blueBackground,
+              "font-thin": !blueBackground,
+            })}
+          >
+            Message:
+            <textarea
+              id="message"
+              name="message"
+              className={classNames(
+                "border border-black/50 rounded bg-white py-4 px-3 font-thin",
+                {
+                  "bg-white/50 border-2 border-white placeholder:text-black/50 text-black":
+                    blueBackground,
+                  "border border-black/50 bg-white": !blueBackground,
+                }
               )}
-              {!validateRecaptcha && (
-                <Recaptcha onChange={handleRecaptchaChange} />
-              )}
-            </>
-          ) : blueBackground ? (
+              rows={5}
+              placeholder="Message goes here..."
+              required
+            ></textarea>
+          </label>
+          {blueBackground ? (
             <Button
+              typeSubmit
               backgroundColor="orange"
               arrowColor="white"
-              cssClasses="desktopSmall:self-start"
-              onClick={() => setShowMessage(true)}
+              cssClasses={classNames(" desktopSmall:self-start", {
+                "opacity-75 desktopSmall:cursor-not-allowed desktopSmall:hover:px-9 desktopSmall:hover:mx-0":
+                  !validateRecaptcha,
+                "hover:desktopSmall:opacity-90": validateRecaptcha,
+              })}
               normalButton
             >
-              Next
+              Submit
             </Button>
           ) : (
             <Button
+              typeSubmit
               secondaryColor="lightBlue"
               arrowColor="black"
-              cssClasses="desktopSmall:self-start"
-              onClick={() => setShowMessage(true)}
+              cssClasses={classNames(" desktopSmall:self-start", {
+                "opacity-50 desktopSmall:cursor-not-allowed desktopSmall:hover:px-9 desktopSmall:hover:mx-0":
+                  !validateRecaptcha,
+                "hover:desktopSmall:opacity-90": validateRecaptcha,
+              })}
               normalButton
+              disabled={!validateRecaptcha}
             >
-              Next
+              Submit
             </Button>
           )}
+          {!validateRecaptcha && <Recaptcha onChange={handleRecaptchaChange} />}
         </form>
       )}
     </div>
