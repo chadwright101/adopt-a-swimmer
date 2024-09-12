@@ -35,7 +35,6 @@ const AboutSection3 = () => {
           <div className="w-full h-full">
             <ImageComponent
               file="DSC_1464.jpg"
-              folder="images"
               phoneWidth={425}
               tabletWidth={800}
               desktopWidth={530}
@@ -93,7 +92,6 @@ const AboutSection3 = () => {
             </div>
             <ImageComponent
               file="IMG-20231119-WA0007.jpg"
-              folder="images"
               phoneWidth={425}
               tabletWidth={800}
               desktopWidth={800}
@@ -103,7 +101,6 @@ const AboutSection3 = () => {
           <div className="hidden desktopSmall:grid gap-10 max-w-[530px] aspect-square rounded-2xl overflow-hidden">
             <ImageComponent
               file="Capture-10-2.jpg"
-              folder="images"
               phoneWidth={10}
               tabletWidth={10}
               desktopWidth={530}
@@ -111,7 +108,6 @@ const AboutSection3 = () => {
             />
             <ImageComponent
               file="Capture-10-3.jpg"
-              folder="images"
               phoneWidth={10}
               tabletWidth={10}
               desktopWidth={530}
@@ -119,7 +115,6 @@ const AboutSection3 = () => {
             />
             <ImageComponent
               file="Capture-10-4.jpg"
-              folder="images"
               phoneWidth={10}
               tabletWidth={10}
               desktopWidth={530}

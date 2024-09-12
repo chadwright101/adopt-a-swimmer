@@ -48,7 +48,6 @@ const SponsorshipsSection1 = () => {
           <div className="grid gap-10 tablet:grid-cols-2 desktopSmall:grid-cols-1 desktopSmall:grid-rows-[250px_250px]">
             <ImageComponent
               file="DSC_0048.jpg"
-              folder="images"
               phoneWidth={425}
               tabletWidth={800}
               desktopWidth={530}
@@ -56,7 +55,6 @@ const SponsorshipsSection1 = () => {
             />
             <ImageComponent
               file="DSC_1494.jpg"
-              folder="images"
               phoneWidth={425}
               tabletWidth={800}
               desktopWidth={530}

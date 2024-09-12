@@ -89,7 +89,6 @@ const Contact = () => {
           <div className="hidden desktopSmall:block">
             <ImageComponent
               file="DSC_0067.jpg"
-              folder="images"
               phoneWidth={10}
               tabletWidth={10}
               desktopWidth={800}

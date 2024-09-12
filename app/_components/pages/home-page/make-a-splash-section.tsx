@@ -19,7 +19,6 @@ const MakeASplashSection = () => {
             phoneWidth={600}
             tabletWidth={800}
             desktopWidth={800}
-            folder="images"
             cssClasses="object-cover w-full h-full rounded-t-full rounded-bl-full desktopSmall:rounded-2xl"
           />
         </div>

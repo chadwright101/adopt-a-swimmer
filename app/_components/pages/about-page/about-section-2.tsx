@@ -115,7 +115,6 @@ const AboutSection2 = () => {
             </div>
             <ImageComponent
               file="Frame-57.jpg"
-              folder="images"
               phoneWidth={10}
               tabletWidth={10}
               desktopWidth={280}
@@ -127,7 +126,6 @@ const AboutSection2 = () => {
       <div className="max-w-[1100px] h-[730px] relative -mx-5 tablet:-mx-10 desktopSmall:rounded-2xl overflow-hidden desktopSmall:mx-auto desktopSmall:my-15">
         <ImageComponent
           file="IMG-20230719-WA0060.jpg"
-          folder="images"
           phoneWidth={1000}
           tabletWidth={1000}
           desktopWidth={1100}

@@ -10,7 +10,6 @@ const QuoteSection = () => {
           phoneWidth={400}
           tabletWidth={750}
           desktopWidth={427}
-          folder="images"
           cssClasses="w-full h-full object-cover"
         />
       </div>

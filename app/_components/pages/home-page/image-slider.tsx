@@ -43,7 +43,6 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
             <SwiperSlide key={index}>
               <ImageComponent
                 file={slide}
-                folder="images"
                 phoneWidth={825}
                 tabletWidth={825}
                 desktopWidth={1100}
@@ -109,7 +108,6 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
           <SwiperSlide key={index}>
             <ImageComponent
               file={slide}
-              folder="images"
               phoneWidth={825}
               tabletWidth={825}
               desktopWidth={1100}
