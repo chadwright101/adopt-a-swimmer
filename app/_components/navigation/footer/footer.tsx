@@ -11,7 +11,6 @@ const Footer = () => {
         <div className="relative desktopSmall:hidden">
           <ImageComponent
             file="ocean-wave.png"
-            folder="images"
             phoneWidth={425}
             tabletWidth={800}
             desktopWidth={1100}
