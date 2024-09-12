@@ -20,7 +20,6 @@ const TeamSection1 = () => {
           </div>
           <ImageComponent
             file="DSC_0151.jpg"
-            folder="images"
             phoneWidth={425}
             tabletWidth={400}
             desktopWidth={720}
@@ -32,8 +31,7 @@ const TeamSection1 = () => {
           <ul className="gap-10 grid min-[540px]:grid-cols-2 desktopSmall:grid-cols-1">
             <li className="desktopSmall:grid grid-cols-[340px_1fr] max-w-[500px] gap-10 desktopSmall:max-w-full">
               <ImageComponent
-                file="meet-the-team/louise-adopt-a-swimmer.jpg"
-                folder="images"
+                file="louise-adopt-a-swimmer.jpg"
                 phoneWidth={425}
                 tabletWidth={500}
                 desktopWidth={500}
@@ -71,8 +69,7 @@ const TeamSection1 = () => {
             <hr className="hidden desktopSmall:block text-white/25" />
             <li className="desktopSmall:grid grid-cols-[340px_1fr] max-w-[500px] gap-10 desktopSmall:max-w-full">
               <ImageComponent
-                file="meet-the-team/Francois.jpg"
-                folder="images"
+                file="Francois.jpg"
                 phoneWidth={425}
                 tabletWidth={500}
                 desktopWidth={500}
@@ -107,8 +104,7 @@ const TeamSection1 = () => {
             <hr className="hidden desktopSmall:block text-white/25" />
             <li className="desktopSmall:grid grid-cols-[340px_1fr] max-w-[500px] gap-10 desktopSmall:max-w-full">
               <ImageComponent
-                file="meet-the-team/clayton.jpg"
-                folder="images"
+                file="clayton.jpg"
                 phoneWidth={425}
                 tabletWidth={500}
                 desktopWidth={500}

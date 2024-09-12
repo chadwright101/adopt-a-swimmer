@@ -24,8 +24,7 @@ const TeamSection2 = () => {
               </div>
               <p className="-mt-4">
                 <ImageComponent
-                  file="/collaborators/carved-media.jpg"
-                  folder="images"
+                  file="carved-media.jpg"
                   phoneWidth={103}
                   tabletWidth={103}
                   desktopWidth={103}
@@ -67,8 +66,7 @@ const TeamSection2 = () => {
             </div>
             <p className="-mt-4">
               <ImageComponent
-                file="/collaborators/the-wright-designs.jpg"
-                folder="images"
+                file="the-wright-designs.jpg"
                 phoneWidth={103}
                 tabletWidth={103}
                 desktopWidth={103}
@@ -236,7 +234,6 @@ const TeamSection2 = () => {
           <figure>
             <ImageComponent
               file="20170513_135156.jpg"
-              folder="images"
               phoneWidth={425}
               tabletWidth={425}
               desktopWidth={530}

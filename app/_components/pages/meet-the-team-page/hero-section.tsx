@@ -6,7 +6,6 @@ const HeroSection = () => {
       <div className="hidden tablet:block">
         <ImageComponent
           file="DSC_0222.jpg"
-          folder="images"
           phoneWidth={10}
           tabletWidth={10}
           desktopWidth={340}
@@ -16,7 +15,6 @@ const HeroSection = () => {
       </div>
       <ImageComponent
         file="20220703_134106.jpg"
-        folder="images"
         phoneWidth={550}
         tabletWidth={800}
         desktopWidth={910}

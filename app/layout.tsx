@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Adopt A Swimmer NPO | Plettenberg Bay",
     images: [
       {
-        url: "https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/images/tr:w-1100,q-70//hero-slides/DSC_1511.jpg",
+        url: "https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/tr:w-1100,q-70/DSC_1511.jpg",
       },
     ],
   },

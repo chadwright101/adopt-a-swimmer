@@ -23,7 +23,6 @@ const AboutSection1 = () => {
           </div>
           <ImageComponent
             file="DSC_0026.jpg"
-            folder="images"
             phoneWidth={425}
             tabletWidth={800}
             desktopWidth={1020}
@@ -42,7 +41,6 @@ const AboutSection1 = () => {
         <div className="grid gap-10 tablet:grid-cols-2 desktop:hidden">
           <ImageComponent
             file="Capture-8.jpg"
-            folder="images"
             phoneWidth={425}
             tabletWidth={800}
             desktopWidth={1100}
@@ -50,7 +48,6 @@ const AboutSection1 = () => {
           />
           <ImageComponent
             file="DSC_1509.jpg"
-            folder="images"
             phoneWidth={425}
             tabletWidth={800}
             desktopWidth={1100}
@@ -59,21 +56,21 @@ const AboutSection1 = () => {
         </div>
         <div className="hidden desktop:flex gap-10 rounded-2xl overflow-hidden">
           <Image
-            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/images/tr:w-240,q-70/Capture-8-1.jpg"
+            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/tr:w-240,q-70/Capture-8-1.jpg"
             alt="Adopt a Swimmer - Plettenberg Bay"
             width={240}
             height={580}
             className="hidden drop-shadow-default desktopSmall:block"
           />
           <Image
-            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/images/tr:w-240,q-70/Capture-8-2.jpg"
+            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/tr:w-240,q-70/Capture-8-2.jpg"
             alt="Adopt a Swimmer - Plettenberg Bay"
             width={240}
             height={580}
             className="hidden drop-shadow-default desktopSmall:block"
           />
           <Image
-            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/images/tr:w-240,q-70/Capture-8-3.jpg"
+            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/tr:w-240,q-70/Capture-8-3.jpg"
             alt="Adopt a Swimmer - Plettenberg Bay"
             width={240}
             height={580}

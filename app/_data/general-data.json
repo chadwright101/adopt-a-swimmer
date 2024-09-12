@@ -1,22 +1,22 @@
 {
   "homePage": {
     "imageSlides": [
-      "/hero-slides/DSC_0130.jpg",
-      "/hero-slides/Capture.jpg",
-      "/hero-slides/DSC_0058.jpg",
+      "/DSC_0130.jpg",
+      "/Capture.jpg",
+      "/DSC_0058.jpg",
       "/20240624_140717.jpg",
-      "/hero-slides/DSC_1456.jpg",
-      "/hero-slides/DSC_0132.jpg",
-      "/hero-slides/M55A6170.jpg",
-      "/hero-slides/DSC_1591.jpg",
-      "/hero-slides/DSC_1476.jpg",
-      "/hero-slides/DSC_0505.jpg",
-      "/hero-slides/M55A6517.jpg",
-      "/hero-slides/DSC_1574.jpg",
-      "/hero-slides/DSC_1460.jpg",
-      "/hero-slides/DSC_0080.jpg",
-      "/hero-slides/DSC_1511.jpg",
-      "/hero-slides/DSC_1669.jpg"
+      "/DSC_1456.jpg",
+      "/DSC_0132.jpg",
+      "/M55A6170.jpg",
+      "/DSC_1591.jpg",
+      "/DSC_1476.jpg",
+      "/DSC_0505.jpg",
+      "/M55A6517.jpg",
+      "/DSC_1574.jpg",
+      "/DSC_1460.jpg",
+      "/DSC_0080.jpg",
+      "/DSC_1511.jpg",
+      "/DSC_1669.jpg"
     ],
     "testimonials": [
       {
@@ -68,52 +68,52 @@
   "sponsorshipsPage": {
     "activeSponsors": [
       {
-        "imgUrl": "/assets/images/collaborators/carved-media.jpg",
+        "imgUrl": "assets/images/collaborators/carved-media.jpg",
         "alt": "Carved Media logo",
         "link": "https://carvedmedia.com/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/delicious-bokeh.jpg",
+        "imgUrl": "assets/images/collaborators/delicious-bokeh.jpg",
         "alt": "Delicious Bokeh logo",
         "link": "https://deliciousbokeh.com/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/sasfin-logo-1.jpg",
+        "imgUrl": "assets/images/collaborators/sasfin-logo-1.jpg",
         "alt": "Sasfin Bank logo",
         "link": "https://sasfin.com/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/the-fat-fish.jpg",
+        "imgUrl": "assets/images/collaborators/the-fat-fish.jpg",
         "alt": "The Fat Fish logo",
         "link": "https://thefatfish.co.za/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/the-wright-designs.jpg",
+        "imgUrl": "assets/images/collaborators/the-wright-designs.jpg",
         "alt": "The Wright Designs logo",
         "link": "https://thewrightdesigns.co.za/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/mungo-move-logo.jpg",
+        "imgUrl": "assets/images/collaborators/mungo-move-logo.jpg",
         "alt": "Mungo Move logo",
         "link": "https://www.mungo.co.za/about-us/move/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/bitou-municipality-logo.jpg",
+        "imgUrl": "assets/images/collaborators/bitou-municipality-logo.jpg",
         "alt": "Bitou Municipality logo",
         "link": "https://www.bitou.gov.za/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/ez-life-swimming-logo.jpg",
+        "imgUrl": "assets/images/collaborators/ez-life-swimming-logo.jpg",
         "alt": "EZ Life logo",
         "link": "https://www.ezlifesports.com/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/stormsriver-adventures.jpg",
+        "imgUrl": "assets/images/collaborators/stormsriver-adventures.jpg",
         "alt": "Stormsriver Adventures logo",
         "link": "https://www.stormsriver.com/"
       },
       {
-        "imgUrl": "/assets/images/collaborators/canopy-tours-logo.jpg",
+        "imgUrl": "assets/images/collaborators/canopy-tours-logo.jpg",
         "alt": "Canopy Tours logo",
         "link": "https://www.canopytour.co.za/"
       }
