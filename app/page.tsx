@@ -26,7 +26,7 @@ export default function Home() {
           alt="Brush stroke graphic"
           width={952}
           height={2258}
-          className="hidden desktopSmall:block absolute top-0 left-0 -z-10 h-full object-cover"
+          className="hidden desktopSmall:block absolute top-0 left-0 -z-10 h-full w-auto object-cover"
         />
         <Image
           src="/graphics/brush-stroke-8.svg"

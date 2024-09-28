@@ -56,21 +56,21 @@ const AboutSection1 = () => {
         </div>
         <div className="hidden desktop:flex gap-10 rounded-2xl overflow-hidden">
           <Image
-            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/tr:w-240,q-70/Capture-8-1.jpg"
+            src="https://ik.imagekit.io/thewrightdesigns/tr:w-240,q-70/Capture-8-1.jpg"
             alt="Adopt a Swimmer - Plettenberg Bay"
             width={240}
             height={580}
             className="hidden drop-shadow-default desktopSmall:block"
           />
           <Image
-            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/tr:w-240,q-70/Capture-8-2.jpg"
+            src="https://ik.imagekit.io/thewrightdesigns/tr:w-240,q-70/Capture-8-2.jpg"
             alt="Adopt a Swimmer - Plettenberg Bay"
             width={240}
             height={580}
             className="hidden drop-shadow-default desktopSmall:block"
           />
           <Image
-            src="https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/tr:w-240,q-70/Capture-8-3.jpg"
+            src="https://ik.imagekit.io/thewrightdesigns/tr:w-240,q-70/Capture-8-3.jpg"
             alt="Adopt a Swimmer - Plettenberg Bay"
             width={240}
             height={580}

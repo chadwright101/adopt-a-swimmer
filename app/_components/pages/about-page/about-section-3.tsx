@@ -132,6 +132,7 @@ const AboutSection3 = () => {
                 target="_blank"
                 className="font-thin text-link hover:desktopSmall:text-orange ease-in-out duration-150"
                 aria-label="Certificate of Registration NPO"
+                prefetch={false}
               >
                 Certificate of Registration NPO
               </Link>
@@ -142,6 +143,7 @@ const AboutSection3 = () => {
                 target="_blank"
                 className="font-thin text-link hover:desktopSmall:text-orange ease-in-out duration-150"
                 aria-label="Sasfin 3rd term report on AAS"
+                prefetch={false}
               >
                 Sasfin 3rd term report on AAS
               </Link>

@@ -2,7 +2,7 @@ import ImageComponent from "../../image-component";
 
 const HeroSection = () => {
   return (
-    <section className="max-w-[1100px] h-[716px] tablet:h-[470px] min-[950px]:h-[550px] desktopSmall:h-[470px] w-full bg-[url('https://ik.imagekit.io/thewrightdesigns/adopt-a-swimmer/images/tr:h-716,q-70/DSC_0160.jpg')] bg-cover bg-no-repeat bg-center relative tablet:bg-none desktopSmall:rounded-b-2xl tablet:overflow-hidden tablet:px-10 desktopSmall:px-0 desktopSmall:mx-auto tablet:grid grid-cols-3 desktopSmall:grid-cols-4 gap-10">
+    <section className="max-w-[1100px] h-[716px] tablet:h-[470px] min-[950px]:h-[550px] desktopSmall:h-[470px] w-full bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:h-716,q-70/DSC_0160.jpg')] bg-cover bg-no-repeat bg-center relative tablet:bg-none desktopSmall:rounded-b-2xl tablet:overflow-hidden tablet:px-10 desktopSmall:px-0 desktopSmall:mx-auto tablet:grid grid-cols-3 desktopSmall:grid-cols-4 gap-10">
       <div>
         <ImageComponent
           file="DSC_1658.jpg"
