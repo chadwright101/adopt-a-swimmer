@@ -8,6 +8,7 @@ import data from "@/app/_data/general-data.json";
 import Image from "next/image";
 import TestimonialsSection from "./_components/pages/home-page/testimonials-section";
 import ContactSection from "./_components/pages/home-page/contact-section";
+import YoutubeVideo from "./_components/pages/home-page/youtube-video";
 
 export default function Home() {
   const {
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection cssClasses="h-[595px] w-full object-cover max-w-[1440px] desktopSmall:h-[647px] desktopSmall:mx-auto" />
       <MakeASplashSection />
       <QuoteSection />
+      <YoutubeVideo />
       <CardSection />
       <div className="relative z-0 max-w-[1440px] mx-auto overflow-hidden pb-20 desktopSmall:pb-15">
         <Image

@@ -4,7 +4,7 @@ interface Props {
   onChange: (value: string | null) => void;
 }
 
-const Recaptcha = ({ onChange }: Props) => {
+const recaptcha = ({ onChange }: Props) => {
   return (
     <ReCAPTCHA
       sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ""}
@@ -14,4 +14,4 @@ const Recaptcha = ({ onChange }: Props) => {
   );
 };
 
-export default Recaptcha;
+export default recaptcha;

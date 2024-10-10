@@ -2,7 +2,7 @@
 
 import data from "@/app/_data/general-data.json";
 import nodemailer from "nodemailer";
-import { emailTemplateHtml } from "@/app/_lib/EmailTemplateHtml";
+import { emailTemplateHtml } from "@/app/_lib/email-template-html";
 import express from "express";
 import rateLimit from "express-rate-limit";
 
