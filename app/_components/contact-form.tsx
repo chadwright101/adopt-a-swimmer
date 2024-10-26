@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+
 import classNames from "classnames";
+
 import Button from "./button";
 import Recaptcha from "@/app/_lib/Recaptcha";
+import { sendEmail } from "@/app/_actions/actions";
 
 interface Props {
   blueBackground?: boolean;
@@ -42,30 +45,6 @@ const ContactForm = ({ blueBackground }: Props) => {
     }
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const data = Object.fromEntries(formData.entries());
-
-    try {
-      const response = await fetch("/api/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        setShowEmailSubmitted(true);
-      } else {
-        console.error("Error submitting form");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
-
   return (
     <div>
       {!showEmailSubmitted && (
@@ -86,10 +65,12 @@ const ContactForm = ({ blueBackground }: Props) => {
             "bg-blue -mx-5 py-10 px-5 tablet:mx-0 tablet:rounded-2xl":
               blueBackground,
           })}
-          onSubmit={handleSubmit}
-          method="POST"
+          action={async (formData) => {
+            await sendEmail(formData);
+            setShowEmailSubmitted(true);
+          }}
         >
-          <input type="hidden" name="honey" className="hidden" />
+          <input type="hidden" name="_honey" className="hidden" />
           <label
             htmlFor="emailAddress"
             className={classNames("grid gap-4 text-paragraph", {
