@@ -54,8 +54,8 @@ const ContactForm = ({ blueBackground }: Props) => {
       )}
       {showEmailSubmitted ? (
         <>
-          <div id="email-submitted"></div>
-          <p className="italic text-[20px]">
+          <div id="email-submitted" className="-translate-y-40"></div>
+          <p className="italic text-[20px] mb-15 tablet:mb-0">
             Your email has been sent, we will be in touch soon.
           </p>
         </>

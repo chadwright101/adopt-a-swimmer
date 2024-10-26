@@ -3,19 +3,7 @@
 import data from "@/app/_data/general-data.json";
 import nodemailer from "nodemailer";
 import { emailTemplateHtml } from "@/app/_lib/email-template-html";
-import express from "express";
-import rateLimit from "express-rate-limit";
-
 import { sanitize } from "isomorphic-dompurify";
-
-const app = express();
-
-const formLimiter = rateLimit({
-  windowMs: 60 * 60 * 1000,
-  max: 5,
-});
-
-app.use("/sendEmail", formLimiter);
 
 export async function sendEmail(formData) {
   const honey = formData.get("honey");
@@ -44,6 +32,7 @@ export async function sendEmail(formData) {
           rejectUnauthorized: false,
         },
       });
+
       const mailOptions = {
         from: process.env.SMTP_USER,
         to: process.env.SMTP_SEND_TO,
@@ -53,11 +42,12 @@ export async function sendEmail(formData) {
       };
 
       await transporter.sendMail(mailOptions);
+      console.log("Email sent successfully");
     } else {
       console.error("Invalid form submission due to non-empty honeypot field");
     }
   } catch (error) {
-    console.error(error);
+    console.error("Error sending email:", error);
   }
 }
 
