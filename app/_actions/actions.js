@@ -20,6 +20,12 @@ app.use("/sendEmail", formLimiter);
 export async function sendEmail(formData) {
   const honey = formData.get("honey");
 
+  console.log("SMPT_HOST", process.env.SMTP_HOST);
+  console.log("SMPT_PORT", process.env.SMTP_PORT);
+  console.log("SMPT_USER", process.env.SMTP_USER);
+  console.log("SMPT_PASS", process.env.SMTP_PASS);
+  console.log("SMPT_SEND_TO", process.env.SMTP_SEND_TO);
+
   try {
     if (honey === null) {
       const name = sanitize(formData.get("name"));
@@ -31,6 +37,8 @@ export async function sendEmail(formData) {
         email,
         message,
       });
+
+      console.log("emailHtmlContent", emailHtmlContent);
 
       const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
