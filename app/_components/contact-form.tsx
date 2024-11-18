@@ -14,7 +14,7 @@ interface Props {
 
 const ContactForm = ({ blueBackground }: Props) => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(true);
+  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
 
   useEffect(() => {
