@@ -121,6 +121,11 @@
         "imgUrl": "assets/images/collaborators/canopy-tours-logo.jpg",
         "alt": "Canopy Tours logo",
         "link": "https://www.canopytour.co.za/"
+      },
+      {
+        "imgUrl": "assets/images/collaborators/plett-villas-logo.jpg",
+        "alt": "Plett Villas logo",
+        "link": "https://plettvillas.co.za/"
       }
     ]
   },
