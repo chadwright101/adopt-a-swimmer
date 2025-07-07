@@ -18,6 +18,15 @@ export default function Home() {
   return (
     <>
       <HeroSection cssClasses="h-[595px] w-full object-cover max-w-[1440px] desktopSmall:h-[647px] desktopSmall:mx-auto" />
+      <div className="grid place-items-center py-15 px-5 bg-beige max-w-[1440px] desktopSmall:mx-auto">
+        <Image
+          src="/assets/images/ocean-festival/plett-ocean-festival-2025.png"
+          alt="Plett Ocean Festival 2025"
+          width={600}
+          height={650}
+          className="desktopSmall:max-w-[600px] object-contain h-auto"
+        />
+      </div>
       <MakeASplashSection />
       <QuoteSection />
       <YoutubeVideo />
