@@ -21,13 +21,18 @@ const AboutSection1 = () => {
               and helping children and combine them.
             </p>
           </div>
-          <ImageComponent
-            file="DSC_0026.jpg"
-            phoneWidth={425}
-            tabletWidth={800}
-            desktopWidth={1020}
-            cssClasses="w-full h-full object-cover aspect-video desktopSmall:aspect-[2/1]"
-          />
+          <div className="relative">
+            <ImageComponent
+              file="DSC01774.JPG"
+              phoneWidth={425}
+              tabletWidth={800}
+              desktopWidth={1020}
+              cssClasses="w-full h-full object-cover aspect-video desktopSmall:aspect-[2/1]"
+            />
+            <caption className="absolute top-0 right-0 bg-white/75 py-1 px-2 text-[12px]">
+              Kayleigh Packwood Images
+            </caption>
+          </div>
         </div>
       </div>
       <div className="py-15 px-5 -mx-5 tablet:px-10 tablet:-mx-10 bg-blue border-y-4 border-orange">

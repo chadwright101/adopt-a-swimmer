@@ -8,7 +8,7 @@ const YouTubeVideo = () => (
     <YouTube
       className="w-full aspect-video desktopSmall:aspect-auto desktopSmall:h-[600px]"
       iframeClassName="h-full w-full"
-      videoId="BM4pWQhxMOA"
+      videoId="9tP8qPJDVTs"
       opts={{
         playerVars: {
           autoplay: 0,

@@ -87,13 +87,18 @@ const Contact = () => {
             </li>
           </ul>
           <div className="hidden desktopSmall:block">
-            <ImageComponent
-              file="DSC_0067.jpg"
-              phoneWidth={10}
-              tabletWidth={10}
-              desktopWidth={800}
-              cssClasses="h-full w-full object-cover"
-            />
+            <div className="relative w-full h-full">
+              <ImageComponent
+                file="DSC01738.JPG"
+                phoneWidth={10}
+                tabletWidth={10}
+                desktopWidth={800}
+                cssClasses="h-full w-full object-cover"
+              />
+              <caption className="absolute top-0 right-0 bg-white/75 py-1 px-2 text-[12px]">
+                Kayleigh Packwood Images
+              </caption>
+            </div>
           </div>
         </div>
         <hr className="text-black/25 my-10 desktopSmall:hidden" />
