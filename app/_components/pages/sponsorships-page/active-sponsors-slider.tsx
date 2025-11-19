@@ -15,6 +15,10 @@ const {
   sponsorshipsPage: { activeSponsors },
 } = data;
 
+const sortedSponsors = [...activeSponsors].sort((a, b) =>
+  a.alt.localeCompare(b.alt)
+);
+
 const ActiveSponsorsSlider = () => {
   return (
     <Swiper
@@ -47,7 +51,7 @@ const ActiveSponsorsSlider = () => {
       modules={[Autoplay, Pagination]}
     >
       <ul>
-        {activeSponsors.map(({ imgUrl, alt, link }, index) => (
+        {sortedSponsors.map(({ imgUrl, alt, link }, index) => (
           <li key={index}>
             <SwiperSlide className="pb-15 my-auto">
               <Link
@@ -67,6 +71,14 @@ const ActiveSponsorsSlider = () => {
             </SwiperSlide>
           </li>
         ))}
+        <li>
+          <SwiperSlide className="my-auto pb-15">
+            <p className="aspect-square w-[160px] flex flex-col justify-center font-caveat text-[28px] text-center bg-white border-2 border-orange rounded-2xl">
+              Charlene & Jerry Sloan
+              <span className="font-caveat text-[20px]">(USA)</span>
+            </p>
+          </SwiperSlide>
+        </li>
         <li>
           <SwiperSlide className="my-auto pb-15">
             <p className="aspect-square w-[160px] flex flex-col justify-center font-caveat text-[28px] text-center bg-white border-2 border-orange rounded-2xl">

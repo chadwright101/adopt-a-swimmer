@@ -131,6 +131,11 @@
         "imgUrl": "assets/images/collaborators/plett-villas-logo.jpg",
         "alt": "Plett Villas logo",
         "link": "https://plettvillas.co.za/"
+      },
+      {
+        "imgUrl": "assets/images/collaborators/beacon-island-logo.png",
+        "alt": "Beacon Island logo",
+        "link": "https://www.southernsun.com/beacon-island-resort"
       }
     ]
   },
