@@ -23,7 +23,7 @@ const SponsorshipsSection2 = () => {
               <p className="text-center text-white text-[20px]">
                 The cost of sponsoring a student is{" "}
                 <span className="font-semiBold text-white text-[20px]">
-                  R7000.00 per year
+                  R7500.00 per year
                 </span>
                 .
               </p>
