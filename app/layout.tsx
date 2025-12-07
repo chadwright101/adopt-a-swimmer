@@ -1,10 +1,28 @@
 import { Metadata } from "next";
+import { Roboto, Barrio, Caveat } from "next/font/google";
 
 import HeaderWrapper from "./_components/navigation/header/header-wrapper";
 import Footer from "./_components/navigation/footer/footer";
 import ScrollUpButton from "./_components/navigation/scroll-up-button";
 
 import "./globals.css";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
+});
+
+const barrio = Barrio({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-barrio",
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-caveat",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://adoptaswimmer.co.za"),
@@ -29,7 +47,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${roboto.variable} ${barrio.variable} ${caveat.variable}`}>
         <HeaderWrapper />
         {children}
         <ScrollUpButton />

@@ -83,7 +83,7 @@ const TestimonialsSection = ({ cssClasses }: Props) => {
           }}
         >
           {testimonials.map(({ quote, name }, index) => (
-            <SwiperSlide key={index} className="pb-15 desktopSmall:pb-10">
+            <SwiperSlide key={name} className="pb-15 desktopSmall:pb-10">
               <blockquote className="text-paragraph text-center grid gap-6">
                 <p className="text-paragraph font-roboto text-white text-center">
                   {showFullQuote[index] || windowWidth >= 1100

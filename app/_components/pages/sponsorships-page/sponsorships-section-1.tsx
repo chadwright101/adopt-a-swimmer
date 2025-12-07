@@ -61,9 +61,9 @@ const SponsorshipsSection1 = () => {
                 desktopWidth={530}
                 cssClasses=" w-full h-full object-cover"
               />
-              <caption className="absolute top-0 right-0 bg-white/75 py-1 px-2 text-[12px]">
+              <div className="absolute top-0 right-0 bg-white/75 py-1 px-2 text-[12px]">
                 Kayleigh Packwood Images
-              </caption>
+              </div>
             </div>
           </div>
         </div>

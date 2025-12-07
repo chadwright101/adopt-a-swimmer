@@ -95,9 +95,9 @@ const Contact = () => {
                 desktopWidth={800}
                 cssClasses="h-full w-full object-cover"
               />
-              <caption className="absolute top-0 right-0 bg-white/75 py-1 px-2 text-[12px]">
+              <div className="absolute top-0 right-0 bg-white/75 py-1 px-2 text-[12px]">
                 Kayleigh Packwood Images
-              </caption>
+              </div>
             </div>
           </div>
         </div>

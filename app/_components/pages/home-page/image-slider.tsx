@@ -39,8 +39,8 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
             prevEl: ".swiper-button-prev",
           }}
         >
-          {data.map((slide, index) => (
-            <SwiperSlide key={index}>
+          {data.map((slide) => (
+            <SwiperSlide key={slide}>
               <ImageComponent
                 file={slide}
                 phoneWidth={825}
@@ -104,8 +104,8 @@ const Slider = ({ cssClasses, desktop, data }: Props) => {
           dynamicBullets: true,
         }}
       >
-        {data.map((slide, index) => (
-          <SwiperSlide key={index}>
+        {data.map((slide) => (
+          <SwiperSlide key={slide}>
             <ImageComponent
               file={slide}
               phoneWidth={825}

@@ -6,8 +6,6 @@ import { emailTemplateHtml } from "@/app/_lib/email-template-html";
 import express from "express";
 import rateLimit from "express-rate-limit";
 
-import { sanitize } from "isomorphic-dompurify";
-
 const app = express();
 
 const formLimiter = rateLimit({
@@ -22,9 +20,9 @@ export async function sendEmail(formData) {
 
   try {
     if (honey === null) {
-      const name = sanitize(formData.get("name"));
-      const email = sanitize(formData.get("email"));
-      const message = sanitize(formData.get("message"));
+      const name = formData.get("name");
+      const email = formData.get("email");
+      const message = formData.get("message");
 
       const emailHtmlContent = emailTemplateHtml({
         name,
